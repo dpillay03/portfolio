@@ -1,0 +1,161 @@
+#home-header-container {
+  max-width: 90%;
+  text-align: center;
+  margin: 0 auto;
+}
+#daniel {
+  font-family: "Bebas Neue", cursive;
+  color: #1c213a;
+  z-index: -1;
+  font-size: 100px;
+  text-shadow: 2px 2px 5px white;
+  position: absolute;
+  opacity: 0.05;
+  top: 0;
+  left: 5px;
+}
+#pillay {
+  font-family: "Bebas Neue", cursive;
+  color: #1c213a;
+  z-index: -1;
+  font-size: 100px;
+  text-shadow: 2px 2px 5px white;
+  top: 0;
+  right: 5px;
+  position: absolute;
+  opacity: 0.05;
+}
+#home-header-container {
+  text-align: center;
+  margin: 0 auto;
+}
+#header-logo {
+  margin: 0 auto;
+  width: 50px;
+  margin-top: 2em;
+  margin-bottom: 3em;
+}
+#header {
+  text-align: center;
+  margin: 0 auto;
+  font-family: "Bebas Neue", cursive;
+  line-height: 1em;
+  font-weight: bolder;
+  font-size: 15vw;
+  background: linear-gradient(
+    120deg,
+    #1c99fe 20.69%,
+    #7644ff 50.19%,
+    #fd4766 79.69%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#subheader {
+  font-family: "Kanit", sans-serif;
+  font-size: 25px;
+  margin: 0 auto;
+  width: 65%;
+  color: rgb(255, 255, 255);
+}
+#home-section {
+  background-color: rgb(21, 13, 28);
+  height: 500px;
+  display: block;
+}
+
+/* About Me */
+.row {
+  margin-top: 200px;
+}
+.column {
+  text-align: center;
+  float: left;
+  width: 45%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row {
+  margin-bottom: 20em;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+#portrait {
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 300px;
+  border: 2px solid white;
+  background-color: #242a49;
+}
+#about-me {
+  margin: 0 auto;
+  text-align: left;
+  color: #fff;
+  font-size: 19px;
+  font-family: "Montserrat", sans-serif;
+}
+#about-me-name {
+  text-align: left;
+  font-size: 70px;
+  letter-spacing: 3px;
+  color: #fd4766;
+  font-family: "Bebas Neue", cursive;
+}
+#about-me-occupation {
+  text-align: left;
+  font-family: "Kanit", sans-serif;
+  font-size: 30px;
+  color: #acacac;
+}
+
+@media only screen and (max-width: 800px) {
+  #daniel {
+    display: none;
+  }
+  #pillay {
+    display: none;
+  }
+  #header {
+    font-size: 60px;
+  }
+
+  p#subheader {
+    font-size: 20px;
+    width: 100%;
+  }
+  p#about-me {
+    width: 100%;
+  }
+  #one {
+    float: none;
+    margin-right: 0;
+    width: auto;
+    border: 0;
+    border-bottom: 2px solid #000;
+  }
+  .column {
+    width: 100%;
+  }
+  #portrait {
+    display: block;
+    width: 200px;
+  }
+  #about-me-name {
+    font-size: 50px;
+    text-align: center;
+  }
+  #about-me-occupation {
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  #about-me {
+    text-align: center;
+    width: 50%;
+  }
+}
