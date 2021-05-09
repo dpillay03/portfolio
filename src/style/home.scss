@@ -1,0 +1,272 @@
+#daniel {
+  left: 10px;
+  top: 0;
+  position: absolute;
+  font-size: 50px;
+  opacity: 0.04;
+  color: white;
+  text-shadow: 2px 2px 10px black;
+  font-family: "Zen Dots", cursive;
+}
+#pillay {
+  right: 10px;
+  top: 0;
+  position: absolute;
+  font-size: 50px;
+  opacity: 0.04;
+  color: white;
+  text-shadow: 2px 2px 10px black;
+  font-family: "Zen Dots", cursive;
+}
+
+/* HEADER */
+.home-container {
+  margin-bottom: 100px;
+  width: 100%;
+  #home-header-container {
+    margin: 0 auto;
+    width: 60%;
+  }
+  #home-header {
+    margin-top: 25px;
+    text-align: center;
+    font-family: "Krona One", sans-serif;
+    font-weight: bolder;
+    font-size: 100px;
+    line-height: 110px;
+    background: #12c2e9; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      #f64f59,
+      #c471ed,
+      #12c2e9
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      #f64f59,
+      #c471ed,
+      #12c2e9
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  #home-subheader {
+    text-align: center;
+    color: rgb(180, 180, 180);
+    font-family: "Quicksand", sans-serif;
+    font-size: 25px;
+  }
+}
+
+/* ABOUT */
+#about-container {
+  margin: 0 auto;
+  margin-top: 150px;
+  width: 60%;
+}
+#portrait {
+  width: 125px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  display: block;
+  border: 3px solid #37313e;
+  border-radius: 500px;
+  background-color: #0f0717;
+  opacity: 0.8;
+}
+#about-me {
+  font-family: "Montserrat", sans-serif;
+  color: rgb(180, 180, 180);
+  font-size: 18px;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+#button-container {
+  text-align: center;
+}
+.contact-btn {
+  background-color: #008cba;
+  font-family: "Quicksand", sans-serif;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  margin-left: 50px;
+  margin-right: 50px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.contact-btn:hover {
+  background-color: #ffffff;
+  color: #008cba;
+}
+
+#app-of-day-container {
+  width: 60%;
+  background: linear-gradient(153deg, #865b75 0, #383a51 95%);
+  border: 1px solid rgba(255, 255, 255, 0.17);
+  margin: 0 auto;
+  margin-top: 25px;
+  border-radius: 10px;
+  padding: 20px;
+  #app-text-container {
+    width: 60%;
+    display: inline-block;
+    #app-of-day-header {
+      font-family: "Bebas Neue", cursive;
+      font-size: 70px;
+      color: white;
+      font-weight: bolder;
+      margin-bottom: 0;
+    }
+    #app-of-day-text {
+      width: 100%;
+      padding-left: 20px;
+    }
+    #app-of-day-description {
+      width: 100%;
+      font-family: "Montserrat", sans-serif;
+      color: rgb(180, 180, 180);
+      font-size: 18px;
+    }
+  }
+  #rollodex-svg {
+    width: 250px;
+    margin-top: 50px;
+    text-align: right;
+  }
+}
+
+/* Skilss & Experience */
+.columns {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: 5px 0;
+}
+
+.column {
+  flex: 1;
+  margin: 2px;
+  padding: 10px;
+  &:first-child {
+    margin-left: 0;
+  }
+  &:last-child {
+    margin-right: 0;
+  }
+}
+h2.tech-skills-headers {
+  font-family: "Quicksand", sans-serif;
+  color: white;
+  text-align: center;
+}
+ul li:before {
+  content: "✓";
+  color: #008cba;
+  padding: 5px;
+}
+li {
+  color: rgb(180, 180, 180);
+  font-family: "Montserrat", sans-serif;
+  text-align: left;
+  list-style: none;
+}
+#skills-container {
+  width: 60%;
+  margin: 0 auto;
+}
+.skills-subheader {
+  font-family: "Bebas Neue", cursive;
+  font-size: 40px;
+  color: white;
+  text-align: center;
+}
+.skills {
+  margin: 0 auto;
+}
+.position {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bolder;
+  font-size: 20px;
+  color: white;
+}
+.title {
+  font-family: "Quicksand", sans-serif;
+  font-size: 17px;
+  color: rgb(180, 180, 180);
+}
+.years {
+  font-family: "Quicksand", sans-serif;
+  font-size: 15px;
+  color: #008cba;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 800px) {
+  #home-header-container {
+    width: 100%;
+  }
+  .home-container #home-header {
+    font-size: 39px;
+    line-height: 50px;
+  }
+  #daniel {
+    display: none;
+  }
+  #pillay {
+    display: none;
+  }
+  .home-container #home-subheader {
+    text-align: center;
+    color: rgb(180, 180, 180);
+    font-family: "Quicksand", sans-serif;
+    font-size: 18px;
+  }
+  #about-container {
+    width: 98%;
+  }
+  #resume-btn {
+    margin-top: 30px;
+  }
+  #skills-container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .columns .column {
+    margin-bottom: 5px;
+    flex-basis: 40%;
+    &:nth-last-child(2) {
+      margin-right: 0;
+    }
+    &:last-child {
+      flex-basis: 100%;
+      margin: 0;
+    }
+  }
+}
+
+@media only screen and (max-width: 1045px) {
+  #rollodex-svg {
+    display: none;
+  }
+  #app-of-day-header {
+    text-align: center;
+  }
+  #app-of-day-container #app-text-container {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+  .columns .column {
+    flex-basis: 100%;
+    margin: 0 0 5px 0;
+  }
+}
