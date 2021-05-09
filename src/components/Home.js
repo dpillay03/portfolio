@@ -1,70 +1,158 @@
 import React from "react";
-import "../style/home.css";
-import Logo from "../assets/dp_logo.png";
-import Rocket from "../assets/rocket_ship.png";
-import Code from "../assets/code.png";
-import Portrait from "../assets/portrait.png";
+import "../style/home.scss";
+import Logo from "../assets/portrait.png";
+import Rollodex from "../assets/rollodex.png";
 
 export default class Home extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <section id='home-header'>
-          {/* <img src={Rocket} alt='Daniel Pillay' id='rocket' /> */}
-          <p id='daniel'>DANIEL</p>
+        <section className='home-container'>
+          <span id='daniel'>DANIEL</span>
           <div id='home-header-container'>
-            <img src={Logo} alt='Daniel Pillay' id='header-logo' />
-            <pre>
-              <h1 id='header'>
-                DESIGN<span id='period-span'>.</span> {"\n"}
-                DEVELOP<span id='period-span'>.</span> DEPLOY
-                <span id='period-span'>.</span>
-              </h1>
-            </pre>
-            <p id='subheader'>
-              I am a full stack developer passionate about {"\n"}
-              all things tech and art, preferably in conjuction.
-            </p>
+            <h1 id='home-header'>DESIGN. DEVELOP. DEPLOY.</h1>
+            <h2 id='home-subheader'>
+              I am a Software Engineer who has a passion for all things tech and
+              art, preferably in conjuction.
+            </h2>
           </div>
-          <p id='pillay'>PILLAY</p>
+          <span id='pillay'>PILLAY</span>
+
+          <div id='about-container'>
+            <p className='section-header'>ABOUT ME</p>
+            <img src={Logo} id='portrait' alt='portrait for daniel pillay' />
+            <p id='about-me'>
+              Hello! My name Daniel Pillay. I am an Air Force veteran turned
+              software engineer who specializes in full-stack development. My
+              goal is to help others grow their online footprint by building
+              powerful and scalable websites and web applications.
+              <br></br>
+              <br></br>I am a Seattle native but I am temporarily residing on
+              the Island of Hawai'i (Kailua-Kona). On my free time, I enjoy
+              training Brazilian Jiu-jitsu, playing the guitar, skydiving,
+              learning new things, and traveling with my wife.
+              <br></br>
+              <br></br>I am available for certain freelance projects and would
+              love to help local businesses who were impacted by COVID-19.
+            </p>
+            <div id='button-container'>
+              <button className='contact-btn' id='hire-me-btn'>
+                Hire Me
+              </button>
+              <button className='contact-btn' id='resume-btn'>
+                Resume
+              </button>
+            </div>
+          </div>
+
+          <p className='section-header'>APP OF THE DAY</p>
+          <div id='app-of-day-container'>
+            <div id='app-text-container'>
+              <p id='app-of-day-header'>Rollodex</p>
+              <p id='app-of-day-description'>
+                Stay in touch with your training partners with Rollodex - the
+                Brazilian Jiu-jitsu social networking app. Rollodex allows you
+                to share your personal progress and stay in touch with training
+                partners. This app was coded from scratch with React.js, Mongo
+                Atlas database, Node.js, and Express.js.
+              </p>
+              <button className='contact-btn' id='resume-btn'>
+                See App
+              </button>
+            </div>
+            <img src={Rollodex} id='rollodex-svg' alt='rollodex thumbnail' />
+          </div>
+
+          <p className='section-header'>EXPERIENCE</p>
+          <div id='skills-container'>
+            <p className='skills-subheader'>Technical Skills</p>
+            <div className='columns'>
+              <div className='column'>
+                <h2 className='tech-skills-headers'>Languages</h2>
+                <ul>
+                  <li>Javascript</li>
+                  <li>Java</li>
+                  <li>Python</li>
+                  <li>SQL</li>
+                  <li>HTML5</li>
+                  <li>CSS/SCSS</li>
+                </ul>
+              </div>
+
+              <div className='column'>
+                <h2 className='tech-skills-headers'>Libraries/Frameworks</h2>
+                <ul>
+                  <li>React</li>
+                  <li>Node</li>
+                  <li>Express</li>
+                  <li>MongoDB</li>
+                  <li>Next.JS</li>
+                  <li>Gatsby.JS</li>
+                </ul>
+              </div>
+
+              <div className='column'>
+                <h2 className='tech-skills-headers'>Tools/Misc.</h2>
+                <ul>
+                  <li>Git</li>
+                  <li>AWS </li>
+                  <li>Heroku</li>
+                  <li>Wordpress</li>
+                  <li>Wix</li>
+                  <li>Squarespace</li>
+                  <li>Command Line</li>
+                  <li>Firebase</li>
+                </ul>
+              </div>
+            </div>
+            <p className='skills-subheader'>Education</p>
+            <div className='skills'>
+              <p className='position'>
+                Colorado State University - Global Campus
+              </p>
+              <p className='title'>
+                {" "}
+                Bachelors of Science - BS Computer Science
+              </p>
+              <p className='years'> 2020-2021</p>
+            </div>
+
+            <div className='skills'>
+              <p className='position'>Code Fellows - Coding Bootcamp</p>
+              <p className='title'>
+                {" "}
+                Certificate in Advanced Software Development in Full Stack
+                JavaScript
+              </p>
+              <p className='years'> 2018</p>
+            </div>
+
+            <p className='skills-subheader'>Work</p>
+            <div className='skills'>
+              <p className='position'>Web Developer and Marketing Strategist</p>
+              <p className='title'> Amazing Life Chiropractic and Wellness</p>
+              <p className='years'>2019 – Current</p>
+            </div>
+
+            <div className='skills'>
+              <p className='position'>Marketing and Social Media Strategist</p>
+              <p className='title'> Renzo Gracie Seattle</p>
+              <p className='years'>2018 – 2019</p>
+            </div>
+
+            <div className='skills'>
+              <p className='position'>Web Developer – Freelance</p>
+              <p className='title'> DP Designs</p>
+              <p className='years'>2017 – 2019</p>
+            </div>
+
+            <div className='skills'>
+              <p className='position'>Security Forces Specialist</p>
+              <p className='title'> United States Air Force</p>
+              <p className='years'>2013 – 2017</p>
+            </div>
+          </div>
         </section>
-
-        {/* <h2 className='section-headers'>About Me</h2>
-        <div className='container'>
-          <div className='column'>
-            <img id='portrait' src={Portrait} alt='daniel pillay' />
-          </div>
-          <div className='column'>
-            <h2 id='about-header'>Daniel Pillay</h2>
-            <h2 id='about-subheader'>Software Engineer</h2>
-            <p id='about-me'>
-              Hello and welcome to my website! I'm a software engineer
-              specialised in full stack development. I have a passion for
-              building complex and scalable websites and web applications. I
-              will be using this website to showcase my work and write about
-              various topics that I find interesting. Feel free to reach out to
-              me if you're interested in working together.
-            </p>
-          </div>
-        </div> */}
-
-        <div className='row'>
-          <div className='column'>
-            <img id='portrait' src={Portrait} alt='daniel pillay' />
-          </div>
-          <div className='column'>
-            <h1 id='about-me-name'>Daniel Pillay</h1>
-            <h1 id='about-me-occupation'>Software Engineer</h1>
-            <p id='about-me'>
-              Hello and welcome to my website! I'm a software engineer
-              specialised in full stack development. I have a passion for
-              building complex and scalable websites and web applications. I
-              will be using this website to showcase my work and write about
-              various topics that I find interesting. Feel free to reach out to
-              me if you're interested in working together.
-            </p>
-          </div>
-        </div>
       </React.Fragment>
     );
   }
