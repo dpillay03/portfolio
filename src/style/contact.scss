@@ -1,0 +1,32 @@
+#contact-container {
+  width: 300px;
+  height: 100%;
+  display: block;
+  margin: 0 auto;
+  margin-top: 150px;
+  text-align: center;
+}
+.social-container {
+  padding: 15px;
+  margin: 0 auto;
+  text-align: center;
+}
+.social-container:last-child {
+  margin-bottom: 20px;
+}
+.social-icon {
+  float: left;
+}
+.social-text {
+  font-size: 25px;
+  color: rgb(180, 180, 180);
+  display: inline-block;
+  margin: 0 auto;
+  font-family: "Krona One", sans-serif;
+  text-align: center;
+}
+#contact-button-container {
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
