@@ -15,44 +15,56 @@ export default class Contact extends React.Component {
       <React.Fragment>
         <div id='contact-container'>
           <div className='social-container'>
-            <RiMailSendLine
-              className='social-icon'
-              size={"40px"}
-              color={"#008cba"}
-            ></RiMailSendLine>
-            <p className='social-text'>Email Me!</p>
+            <a href='mailto:dpillay03@gmail.com'>
+              <RiMailSendLine
+                className='social-icon'
+                size={"40px"}
+                color={"#008cba"}
+              ></RiMailSendLine>
+              <p className='social-text' href='mailto:dpillay03@gmail.com'>
+                Email Me!
+              </p>
+            </a>
           </div>
           <div className='social-container'>
-            <SiGithub
-              className='social-icon'
-              size={"40px"}
-              color={"#008cba"}
-            ></SiGithub>
-            <p className='social-text'>GitHub</p>
+            <a href='https://github.com/dpillay03'>
+              <SiGithub
+                className='social-icon'
+                size={"40px"}
+                color={"#008cba"}
+              ></SiGithub>
+              <p className='social-text'>GitHub</p>
+            </a>
           </div>
           <div className='social-container'>
-            <SiLinkedin
-              className='social-icon'
-              size={"40px"}
-              color={"#008cba"}
-            ></SiLinkedin>
-            <p className='social-text'>LinkedIn</p>
+            <a href='https://www.linkedin.com/in/danielpillay/'>
+              <SiLinkedin
+                className='social-icon'
+                size={"40px"}
+                color={"#008cba"}
+              ></SiLinkedin>
+              <p className='social-text'>LinkedIn</p>
+            </a>
           </div>
           <div className='social-container'>
-            <SiCodepen
-              className='social-icon'
-              size={"40px"}
-              color={"#008cba"}
-            ></SiCodepen>
-            <p className='social-text'>CodePen</p>
+            <a href='https://codepen.io/dpillay03'>
+              <SiCodepen
+                className='social-icon'
+                size={"40px"}
+                color={"#008cba"}
+              ></SiCodepen>
+              <p className='social-text'>CodePen</p>
+            </a>
           </div>
           <div className='social-container'>
-            <SiFacebook
-              className='social-icon'
-              size={"40px"}
-              color={"#008cba"}
-            ></SiFacebook>
-            <p className='social-text'>FaceBook</p>
+            <a href='https://www.facebook.com/dan3pillay/'>
+              <SiFacebook
+                className='social-icon'
+                size={"40px"}
+                color={"#008cba"}
+              ></SiFacebook>
+              <p className='social-text'>Facebook</p>
+            </a>
           </div>
         </div>
         <div id='contact-button-container'>
