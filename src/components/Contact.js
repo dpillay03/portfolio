@@ -21,9 +21,9 @@ export default class Contact extends React.Component {
                 size={"40px"}
                 color={"#008cba"}
               ></RiMailSendLine>
-              <p className='social-text' href='mailto:dpillay03@gmail.com'>
-                Email Me!
-              </p>
+              <a href='mailto:dpillay03@gmail.com'>
+                <p className='social-text'>Email Me!</p>
+              </a>
             </a>
           </div>
           <div className='social-container'>
