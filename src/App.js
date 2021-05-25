@@ -41,7 +41,7 @@ export default function App() {
       <Switch>
         <Route exact path='/' component={Home} />
         <Route exact path='/projects' component={Projects} />
-        <Route exact path='/blog/:slug' component={SinglePost} />
+        <Route exact path='/post/:slug' component={SinglePost} />
         <Route exact path='/blog' component={Post} />
         <Route exact path='/contact' component={Contact} />
       </Switch>

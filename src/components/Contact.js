@@ -1,18 +1,13 @@
 import React from "react";
 import "../style/contact.scss";
-import {
-  SiMinutemailer,
-  SiGithub,
-  SiCodepen,
-  SiLinkedin,
-  SiFacebook,
-} from "react-icons/si";
+import { SiGithub, SiCodepen, SiLinkedin, SiFacebook } from "react-icons/si";
 import { RiMailSendLine } from "react-icons/ri";
 
 export default class Contact extends React.Component {
   render() {
     return (
       <React.Fragment>
+        <h1 className='page-header'>LET'S GET IN TOUCH!</h1>
         <div id='contact-container'>
           <div className='social-container'>
             <a href='mailto:dpillay03@gmail.com'>
@@ -21,9 +16,9 @@ export default class Contact extends React.Component {
                 size={"40px"}
                 color={"#008cba"}
               ></RiMailSendLine>
-              <p className='social-text' href='mailto:dpillay03@gmail.com'>
-                Email Me!
-              </p>
+              <a href='mailto:dpillay03@gmail.com'>
+                <p className='social-text'>Email Me!</p>
+              </a>
             </a>
           </div>
           <div className='social-container'>

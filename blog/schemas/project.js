@@ -1,6 +1,6 @@
 export default {
-  name: "post",
-  title: "Post",
+  name: "project",
+  title: "Project",
   type: "document",
   fields: [
     {
@@ -18,18 +18,6 @@ export default {
       },
     },
     {
-      name: "youtube",
-      type: "object",
-      title: "YouTube Embed",
-      fields: [
-        {
-          name: "url",
-          type: "url",
-          title: "YouTube video URL",
-        },
-      ],
-    },
-    {
       name: "author",
       title: "Author",
       type: "reference",
@@ -43,7 +31,6 @@ export default {
         hotspot: true,
       },
     },
-
     {
       name: "categories",
       title: "Categories",
@@ -54,28 +41,14 @@ export default {
       name: "publishedAt",
       title: "Published at",
       type: "datetime",
-      orderings: [
-        {
-          title: "Published at",
-          name: "publishedAt",
-          by: [{ field: "post.publishedAt", direction: "desc" }],
-        },
-      ],
     },
-
     {
       name: "body",
       title: "Body",
       type: "blockContent",
     },
   ],
-  orderings: [
-    {
-      title: "Post date",
-      name: "postDate",
-      by: [{ field: "post.postDate", direction: "desc" }],
-    },
-  ],
+
   preview: {
     select: {
       title: "title",

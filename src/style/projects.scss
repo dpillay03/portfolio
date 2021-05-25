@@ -1,0 +1,57 @@
+.projects {
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+.projects-section {
+  width: 500px;
+  text-align: center;
+  display: inline-block;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 100px;
+}
+.project-image {
+  width: 500px;
+}
+.project-title {
+  font-family: "Bebas Neue", cursive;
+  font-size: 50px;
+  color: white;
+}
+.project-description {
+  font-family: "Montserrat", sans-serif;
+  color: rgb(180, 180, 180);
+  font-size: 18px;
+}
+.repo-div {
+  width: 20%;
+  display: inline-block;
+}
+.project-div {
+  width: 20%;
+  display: inline-block;
+}
+.repo-icon-text,
+a {
+  text-decoration: none;
+  color: white;
+  font-family: "Quicksand", sans-serif;
+}
+
+@media only screen and (max-width: 700px) {
+  .projects-section {
+    width: 95%;
+    margin-bottom: 100px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .project-image {
+    width: 100%;
+  }
+  .project-description {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+}
