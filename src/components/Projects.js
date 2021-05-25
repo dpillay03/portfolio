@@ -1,71 +1,66 @@
-import React, { useEffect, useState } from "react";
-import sanityClient from "../client.js";
+import React from "react";
+import { Projects } from "./ProjectDB.js";
+import "../style/projects.scss";
+import { GoLinkExternal, GoRepoForked } from "react-icons/go";
 
 export default function Project() {
-  const [projectData, setProjectData] = useState(null);
-
-  useEffect(() => {
-    sanityClient
-      .fetch(
-        `*[_type == "project"]{
-        title,
-        date,
-        place,
-        language,
-        description,
-        projectType,
-        link,
-        tags
-      }`
-      )
-      .then((data) => setProjectData(data))
-      .catch(console.error);
-  }, []);
-
   return (
-    <main>
-      <h1 id='project-header'>Projects sdf</h1>
-
-      <section className='project-section'>
-        {projectData &&
-          projectData.map((project, index) => (
-            <article className='project-article'>
-              <h3 className='project-title'>
-                <a
-                  href={project.link}
-                  alt={project.title}
-                  target='_blank'
-                  rel='noopener noreferrer'
-                >
-                  {project.title}
-                </a>
-              </h3>
-              <div>
-                {/* <span>
-                    <strong className="font-bold">Finished on</strong>:{" "}
-                    {new Date(project.date).toLocaleDateString()}
-                  </span>
-                  <span>
-                    <strong className="font-bold">Company</strong>:{" "}
-                    {project.place}
-                  </span> */}
-                <span>
-                  <strong className='project-type'>Type</strong>:{" "}
-                  {project.projectType}
-                </span>
-              </div>
+    <main className='projects'>
+      <h1 className='page-header'>MY WORK</h1>
+      <section>
+        {Projects.map((project, i) => {
+          return (
+            <div className='projects-section' key={i}>
+              <img src={project.image} className='project-image'></img>
+              <h2 className='project-title'>{project.name}</h2>
               <p className='project-description'>{project.description}</p>
-              <a
-                href={project.link}
-                rel='noopener noreferrer'
-                target='_blank'
-                className='view-project-link'
-              >
-                View The Project{" "}
-                <span role='img' aria-label='right pointer'></span>
-              </a>
-            </article>
-          ))}
+
+              <div className='repo-div'>
+                <a href={project.github} target='_blank' rel='noreferrer'>
+                  <GoRepoForked
+                    className='repo-icon'
+                    color={"#008cba"}
+                    size={"30px"}
+                  />{" "}
+                  <p className='repo-icon-text'>Repo</p>
+                </a>
+              </div>
+
+              <div className='project-div'>
+                <a href={project.link} target='_blank' rel='noreferrer'>
+                  <GoLinkExternal
+                    className='project-icon'
+                    color={"#008cba"}
+                    size={"30px"}
+                  />{" "}
+                  <p>Project</p>
+                </a>
+              </div>
+            </div>
+          );
+        })}
+        {/* <h2>{Projects.name}</h2>
+        <p>{Projects.description}</p>
+        <div className='repo-div'>
+          <a href='#' target='_blank' rel='noreferrer'>
+            <GoRepoForked
+              className='repo-icon'
+              color={"#008cba"}
+              size={"30px"}
+            />{" "}
+            <p>View Repo</p>
+          </a>
+        </div>
+        <div className='project-div'>
+          <a href='#' target='_blank' rel='noreferrer'>
+            <GoLinkExternal
+              className='project-icon'
+              color={"#008cba"}
+              size={"30px"}
+            />{" "}
+            <p>View Project</p>
+          </a>
+        </div> */}
       </section>
     </main>
   );

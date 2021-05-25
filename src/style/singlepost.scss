@@ -1,0 +1,85 @@
+.blog-wrapper {
+  width: 90%;
+  margin: 0 auto;
+  .blog-author-image {
+    width: 75px;
+  }
+  img.blog-main-image {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    width: 800px;
+  }
+  .blog-content {
+    display: block;
+    margin: 0 auto;
+  }
+  .page-header {
+    text-align: center;
+  }
+}
+
+.blog-content-container {
+  width: 70%;
+  display: block;
+  margin: 0 auto;
+  .blog-content {
+    color: white;
+  }
+  .blog-content h1 {
+    font-size: 40px;
+    color: rgb(150, 150, 150);
+    text-align: center;
+    font-family: "Krona One", sans-serif;
+  }
+  .blog-content h2 {
+    font-size: 40px;
+    color: rgb(150, 150, 150);
+    text-align: center;
+    font-family: "Krona One", sans-serif;
+  }
+  .blog-content h3 {
+    font-size: 30px;
+    color: rgb(150, 150, 150);
+    text-align: center;
+    font-family: "Krona One", sans-serif;
+  }
+  .blog-content p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    color: rgb(233, 232, 232);
+    line-height: 1.3em;
+  }
+}
+.blog-author-container {
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 70px;
+  img.blog-author-image {
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+  }
+  .blog-author {
+    color: rgb(252, 252, 252);
+    font-size: 12px;
+    text-align: center;
+    font-family: "Krona One", sans-serif;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .blog-wrapper {
+    width: 95%;
+    margin: 0 auto;
+    .blog-content-container {
+      display: block;
+      margin: 0 auto;
+      width: 90%;
+    }
+    img.blog-main-image {
+      width: 100%;
+      height: auto;
+      text-align: center;
+    }
+  }
+}

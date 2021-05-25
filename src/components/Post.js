@@ -27,13 +27,17 @@ export default function Post() {
 
   return (
     <main id='article-section'>
-      <section id='article-container'>
-        <h1 id='home-header'>Blog Posts</h1>
-        <div>
+      <h1 className='page-header'>BLOG POSTS</h1>
+      <section>
+        <div className='article-container'>
           {postData &&
             postData.map((post, index) => (
               <article>
-                <Link to={"/post/" + post.slug.current} key={post.slug.current}>
+                <Link
+                  className='article'
+                  to={"/post/" + post.slug.current}
+                  key={post.slug.current}
+                >
                   <span key={index}>
                     <img
                       src={post.mainImage.asset.url}
@@ -42,12 +46,14 @@ export default function Post() {
                     />
                     <span>
                       <h3 className='blog-title'>{post.title}</h3>
+                      <h3 className='blog-title'>{post.publishedAt}</h3>
                     </span>
                   </span>
                 </Link>
               </article>
             ))}
         </div>
+        <div class='clear'></div>
       </section>
     </main>
   );

@@ -1,3 +1,46 @@
+#article-section {
+  margin-bottom: 100px;
+}
 .blog-image {
   width: 300px;
+  height: 205px;
+  display: block;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 2px;
+}
+a.article {
+  text-decoration: none;
+}
+a.article:visited {
+  color: white;
+}
+h3.blog-title {
+  text-decoration: none;
+  color: white;
+  font-family: "Krona One", sans-serif;
+  font-size: 15px;
+  width: 300px;
+}
+
+.article-container {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.article {
+  flex: 1 0 24rem;
+  box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+}
+@supports (display: grid) {
+  .article-container {
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-gap: 5rem;
+  }
+
+  .article-container .gallery {
+    margin: 0;
+  }
 }
