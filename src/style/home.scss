@@ -1,6 +1,6 @@
 #daniel {
-  left: 10px;
-  top: 0;
+  left: 0px;
+  top: 0px;
   position: absolute;
   font-size: 50px;
   opacity: 0.04;
@@ -9,8 +9,8 @@
   font-family: "Zen Dots", cursive;
 }
 #pillay {
-  right: 10px;
-  top: 0;
+  right: 0px;
+  top: 0px;
   position: absolute;
   font-size: 50px;
   opacity: 0.04;
@@ -28,7 +28,6 @@
     width: 60%;
   }
   #home-header {
-    margin-top: 25px;
     text-align: center;
     font-family: "Krona One", sans-serif;
     font-weight: bolder;
@@ -61,7 +60,6 @@
 /* ABOUT */
 #about-container {
   margin: 0 auto;
-  margin-top: 150px;
   width: 60%;
 }
 #portrait {
@@ -70,7 +68,7 @@
   margin-bottom: 20px;
   display: block;
   border: 3px solid #37313e;
-  border-radius: 500px;
+  border-radius: 25%;
   background-color: #0f0717;
   opacity: 0.8;
 }
@@ -88,10 +86,10 @@
   text-align: center;
 }
 .contact-btn {
-  background-color: #008cba;
+  background-color: #0f0717;
+  border: 1px solid #37313e;
   font-family: "Quicksand", sans-serif;
-  border: none;
-  color: white;
+  color: #6efcf1;
   padding: 16px 32px;
   text-align: center;
   text-decoration: none;
@@ -105,7 +103,7 @@
 }
 .contact-btn:hover {
   background-color: #ffffff;
-  color: #008cba;
+  color: #00ccff;
 }
 
 #app-of-day-container {
@@ -170,7 +168,7 @@ h2.tech-skills-headers {
 }
 ul li:before {
   content: "✓";
-  color: #008cba;
+  color: #00ccff;
   padding: 5px;
 }
 li {
@@ -195,28 +193,35 @@ li {
 .position {
   font-family: "Montserrat", sans-serif;
   font-weight: bolder;
-  font-size: 20px;
+  font-size: 21px;
   color: white;
 }
 .title {
   font-family: "Quicksand", sans-serif;
-  font-size: 17px;
+  font-size: 18px;
   color: rgb(180, 180, 180);
 }
 .years {
   font-family: "Quicksand", sans-serif;
-  font-size: 15px;
-  color: #008cba;
+  font-size: 16px;
+  color: #00ccff;
 }
 
 /* Media Queries */
 @media only screen and (max-width: 800px) {
+  .top-nav-section {
+    display: none;
+  }
   #home-header-container {
     width: 100%;
   }
+  .home-container #home-header-container {
+    width: 95%;
+  }
   .home-container #home-header {
-    font-size: 39px;
+    font-size: 50px;
     line-height: 50px;
+    width: 100%;
   }
   #daniel {
     display: none;
@@ -231,6 +236,9 @@ li {
     font-size: 18px;
   }
   #about-container {
+    width: 98%;
+  }
+  #about-me {
     width: 98%;
   }
   #resume-btn {

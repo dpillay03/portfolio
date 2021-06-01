@@ -2,10 +2,10 @@
   margin-bottom: 100px;
 }
 .blog-image {
-  width: 300px;
-  height: 205px;
+  width: 500px;
+  height: 300px;
   display: block;
-  border: 1px solid rgb(255, 255, 255);
+  border: 1px solid rgb(150, 150, 150);
   border-radius: 2px;
 }
 a.article {
@@ -16,6 +16,7 @@ a.article:visited {
 }
 h3.blog-title {
   text-decoration: none;
+  margin: 0 auto;
   color: white;
   font-family: "Krona One", sans-serif;
   font-size: 15px;
@@ -42,5 +43,12 @@ h3.blog-title {
 
   .article-container .gallery {
     margin: 0;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .blog-image {
+    width: 350px;
+    height: auto;
   }
 }

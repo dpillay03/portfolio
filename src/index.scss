@@ -18,6 +18,9 @@
 /* DANIEL PILLAY: font-family: 'Zen Dots', cursive; */
 @import url("https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap");
 
+/* Section Headers */
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap");
+
 body {
   width: 100%;
   padding: 0px;
@@ -25,30 +28,31 @@ body {
   box-sizing: border-box;
   background-color: #1c1026;
 }
+/* Page Headers */
 .page-header {
   font-family: "Krona One", sans-serif;
-  background: #12c2e9; /* fallback for old browsers */
+  background: #12c2e9;
   background: -webkit-linear-gradient(
     to right,
     #f64f59,
     #c471ed,
     #12c2e9
   ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #f64f59,
-    #c471ed,
-    #12c2e9
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 40px;
+  font-size: 50px;
   text-align: center;
 }
+/* Subsection Headers */
 .section-header {
   font-family: "Zen Dots", cursive;
-  font-size: 40px;
+  font-size: 30px;
+  margin-left: 10px;
   color: white;
-  text-align: center;
+  text-shadow: 2px 2px 10px black;
+  opacity: 0.1;
   margin-top: 100px;
+  letter-spacing: 2px;
+  text-orientation: upright;
 }
