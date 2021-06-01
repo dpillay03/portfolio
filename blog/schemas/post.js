@@ -9,15 +9,6 @@ export default {
       type: "string",
     },
     {
-      name: "slug",
-      title: "Slug",
-      type: "slug",
-      options: {
-        source: "title",
-        maxLength: 96,
-      },
-    },
-    {
       name: "youtube",
       type: "object",
       title: "YouTube Embed",
@@ -28,6 +19,15 @@ export default {
           title: "YouTube video URL",
         },
       ],
+    },
+    {
+      name: "slug",
+      title: "Slug",
+      type: "slug",
+      options: {
+        source: "title",
+        maxLength: 96,
+      },
     },
     {
       name: "author",
@@ -69,18 +69,13 @@ export default {
       type: "blockContent",
     },
   ],
-  orderings: [
-    {
-      title: "Post date",
-      name: "postDate",
-      by: [{ field: "post.postDate", direction: "desc" }],
-    },
-  ],
+
   preview: {
     select: {
       title: "title",
       author: "author.name",
       media: "mainImage",
+      youtube: "youtube",
     },
     prepare(selection) {
       const { author } = selection;

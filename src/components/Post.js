@@ -18,7 +18,7 @@ export default function Post() {
             url
           },
           alt
-        }
+        },
       }`
       )
       .then((data) => setPost(data))
@@ -27,7 +27,7 @@ export default function Post() {
 
   return (
     <main id='article-section'>
-      <h1 className='page-header'>BLOG POSTS</h1>
+      <h1 className='page-header'>BLOG</h1>
       <section>
         <div className='article-container'>
           {postData &&

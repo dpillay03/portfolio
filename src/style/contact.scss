@@ -1,31 +1,48 @@
 #contact-container {
-  width: 300px;
-  height: 100%;
+  width: 500px;
+
   display: block;
   margin: 0 auto;
   text-align: center;
 }
 .social-container {
-  padding: 15px;
   margin: 0 auto;
   text-align: center;
 }
 .social-container:last-child {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 .social-icon {
   float: left;
+  margin-right: 50px;
+  margin-left: 20%;
 }
 .social-text {
-  font-size: 25px;
-  color: rgb(180, 180, 180);
-  display: inline-block;
-  margin: 0 auto;
+  font-size: 20px;
+  padding: 5px;
+  color: rgb(255, 255, 255);
   font-family: "Krona One", sans-serif;
-  text-align: center;
+  text-align: left;
 }
 #contact-button-container {
   text-align: center;
   margin: 0 auto;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
+}
+
+@media only screen and (max-width: 800px) {
+  #contact-container {
+    width: 100%;
+  }
+  .social-icon {
+    float: left;
+    margin-right: 20px;
+    margin-left: 10px;
+  }
+  #contact-button-container {
+    margin-bottom: 100px;
+  }
+  .social-container:last-child {
+    margin-bottom: 10px;
+  }
 }
