@@ -7,7 +7,7 @@ export default class Media extends React.Component {
       <React.Fragment>
         <main className='project'>
           <h1 className='page-header'>Media</h1>
-          <section>
+          <section id='media-section'>
             {Video.map((media, i) => {
               return (
                 <div className='projects-section' key={i}>
