@@ -1,12 +1,19 @@
 #article-section {
   margin-bottom: 100px;
+  width: 100%;
+}
+.article-container {
+  width: 500px;
+  margin: 0 auto;
 }
 .blog-image {
-  width: 500px;
-  height: 300px;
-  display: block;
-  border: 1px solid rgb(150, 150, 150);
-  border-radius: 2px;
+  width: 450px;
+  height: 275px;
+  margin: 0 auto;
+  transition: 0.2s;
+}
+.blog-image:hover {
+  opacity: 0.5;
 }
 a.article {
   text-decoration: none;
@@ -15,40 +22,13 @@ a.article:visited {
   color: white;
 }
 h3.blog-title {
-  text-decoration: none;
-  margin: 0 auto;
+  margin-top: 10px;
+  font-family: "Bebas Neue", cursive;
+  font-size: 35px;
   color: white;
-  font-family: "Krona One", sans-serif;
-  font-size: 15px;
-  width: 300px;
-}
-
-.article-container {
+  width: 500px;
   text-align: center;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
 }
 
-.article {
-  flex: 1 0 24rem;
-  box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
-  overflow: hidden;
-}
-@supports (display: grid) {
-  .article-container {
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-    grid-gap: 5rem;
-  }
-
-  .article-container .gallery {
-    margin: 0;
-  }
-}
-
-@media only screen and (max-width: 800px) {
-  .blog-image {
-    width: 350px;
-    height: auto;
-  }
-}
+// @media only screen and (max-width: 800px) {
+// }

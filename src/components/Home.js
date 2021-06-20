@@ -1,10 +1,9 @@
 import React from "react";
 import "../style/home.scss";
-import Portrait from "../assets/portrait.png";
+import Portrait from "../assets/brand_image.png";
 import Rollodex from "../assets/rollodex.png";
 import { BsPersonLinesFill } from "react-icons/bs";
 import { FiCodepen } from "react-icons/fi";
-
 import { BsTools } from "react-icons/bs";
 
 export default class Home extends React.Component {
@@ -25,7 +24,7 @@ export default class Home extends React.Component {
 
           {/* ABOUT ME  */}
           <p className='section-header'>
-            ABOUT ME <BsPersonLinesFill size={"25px"} />
+            ABOUT ME <BsPersonLinesFill size={"40px"} />
           </p>
           <div id='about-container'>
             <img
@@ -52,21 +51,18 @@ export default class Home extends React.Component {
               traveling.
             </p>
             <div id='button-container'>
-              <a href='mailto:dpillay03@gmail.com?subject=Website inquiry'>
+              <a href='danielpillay.com/contact'>
                 <button className='contact-btn' id='hire-me-btn'>
                   Hire Me
                 </button>
               </a>
-              <button className='contact-btn' id='resume-btn'>
-                Resume
-              </button>
             </div>
           </div>
         </section>
         {/* PROJECTS */}
         <p className='section-header'>
           APP OF THE DAY
-          <FiCodepen size={"25px"} />
+          <FiCodepen size={"40px"} />
         </p>
         <div id='app-of-day-container'>
           <div id='app-text-container'>
@@ -87,7 +83,7 @@ export default class Home extends React.Component {
         {/* SKILLS */}
         <p className='section-header'>
           SKILLS
-          <BsTools size={"25px"} />
+          <BsTools size={"40px"} />
         </p>
         <div id='skills-container'>
           <p className='skills-subheader'>Technical Skills</p>

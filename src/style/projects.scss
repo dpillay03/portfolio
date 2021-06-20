@@ -1,26 +1,39 @@
-#media-section {
-  margin: 0 auto;
-  text-align: center;
-}
 .projects {
   width: 100%;
-  display: block;
   text-align: center;
+  margin-bottom: 100px;
 }
 .projects-section {
   width: 500px;
   text-align: center;
-  display: inline-block;
-  padding-left: 100px;
-  padding-right: 100px;
-  padding-bottom: 100px;
+  margin-top: 50px;
+  text-align: center;
+}
+.media-section {
+  margin: 0 auto;
+  width: 100%;
+}
+.project-section {
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
 }
 .project-image {
   width: 500px;
+  transition: 0.2s;
+}
+.project-image:hover {
+  opacity: 0.5;
+  cursor: pointer;
 }
 .project-title {
   font-family: "Bebas Neue", cursive;
-  font-size: 50px;
+  font-size: 40px;
+  color: white;
+}
+.media-title {
+  font-family: "Bebas Neue", cursive;
+  font-size: 35px;
   color: white;
 }
 .project-description {
@@ -37,12 +50,39 @@
   display: inline-block;
 }
 .repo-icon-text,
-a {
+a p {
   text-decoration: none;
+
   color: white;
   font-family: "Quicksand", sans-serif;
 }
 
+/* Other Projects */
+.other-projects-container {
+  margin: 0 auto;
+  width: 70%;
+}
+.otherProj {
+  margin-bottom: 100px;
+}
+.otherProj-image {
+  width: 300px;
+  transition: 0.2s;
+}
+.otherProj-image:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+.otherProj-title {
+  font-family: "Bebas Neue", cursive;
+  font-size: 30px;
+  color: white;
+}
+.otherProj-description {
+  font-family: "Montserrat", sans-serif;
+  color: rgb(180, 180, 180);
+  font-size: 15px;
+}
 @media only screen and (max-width: 700px) {
   .projects-section {
     width: 95%;

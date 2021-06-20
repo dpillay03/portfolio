@@ -29,10 +29,10 @@ export default function Post() {
     <main id='article-section'>
       <h1 className='page-header'>BLOG</h1>
       <section>
-        <div className='article-container'>
+        <div className='row article-container'>
           {postData &&
             postData.map((post, index) => (
-              <article>
+              <div className='col-sm-6'>
                 <Link
                   className='article'
                   to={"/post/" + post.slug.current}
@@ -50,10 +50,9 @@ export default function Post() {
                     </span>
                   </span>
                 </Link>
-              </article>
+              </div>
             ))}
         </div>
-        <div class='clear'></div>
       </section>
     </main>
   );

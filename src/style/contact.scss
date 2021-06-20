@@ -1,29 +1,48 @@
+.contact-header {
+  margin-bottom: 100px;
+}
+.ContactForm {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0px;
+}
+.form-control {
+  margin: 10px;
+}
+.submit-btn {
+  background-color: #0f0717;
+  border: 1px solid #37313e;
+  font-family: "Quicksand", sans-serif;
+  color: #6efcf1;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  margin-left: 50px;
+  margin-right: 50px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.submit-btn:hover {
+  background-color: #ffffff;
+  color: #6efcf1;
+}
 #contact-container {
   width: 500px;
-
   display: block;
   margin: 0 auto;
   text-align: center;
+  margin-top: 75px;
+  margin-bottom: 20px;
 }
 .social-container {
-  margin: 0 auto;
-  text-align: center;
+  margin-left: 15px;
+  margin-right: 15px;
+  display: inline;
 }
-.social-container:last-child {
-  margin-bottom: 40px;
-}
-.social-icon {
-  float: left;
-  margin-right: 50px;
-  margin-left: 20%;
-}
-.social-text {
-  font-size: 20px;
-  padding: 5px;
-  color: rgb(255, 255, 255);
-  font-family: "Krona One", sans-serif;
-  text-align: left;
-}
+
 #contact-button-container {
   text-align: center;
   margin: 0 auto;
@@ -34,11 +53,7 @@
   #contact-container {
     width: 100%;
   }
-  .social-icon {
-    float: left;
-    margin-right: 20px;
-    margin-left: 10px;
-  }
+
   #contact-button-container {
     margin-bottom: 100px;
   }

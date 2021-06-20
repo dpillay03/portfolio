@@ -63,13 +63,10 @@
   width: 60%;
 }
 #portrait {
-  width: 125px;
+  width: 150px;
   margin: 0 auto;
   margin-bottom: 20px;
   display: block;
-  border: 3px solid #37313e;
-  border-radius: 25%;
-  background-color: #0f0717;
   opacity: 0.8;
 }
 #about-me {
@@ -168,7 +165,7 @@ h2.tech-skills-headers {
 }
 ul li:before {
   content: "✓";
-  color: #00ccff;
+  color: rgb(0, 140, 186);
   padding: 5px;
 }
 li {
@@ -180,6 +177,8 @@ li {
 #skills-container {
   width: 60%;
   margin: 0 auto;
+
+  padding-bottom: 100px;
 }
 .skills-subheader {
   font-family: "Bebas Neue", cursive;
@@ -204,7 +203,7 @@ li {
 .years {
   font-family: "Quicksand", sans-serif;
   font-size: 16px;
-  color: #00ccff;
+  color: rgb(0, 140, 186);
 }
 
 /* Media Queries */
