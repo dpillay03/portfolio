@@ -7,10 +7,10 @@ export default class Media extends React.Component {
       <React.Fragment>
         <main className='project'>
           <h1 className='page-header'>MEDIA</h1>
-          <section id='media-section'>
+          <section className='row media-section'>
             {Video.map((media, i) => {
               return (
-                <div className='projects-section' key={i}>
+                <div className='projects-section col-sm-6' key={i}>
                   <a href={media.link}>
                     <img
                       src={media.image}
@@ -18,7 +18,7 @@ export default class Media extends React.Component {
                       alt='daniel pillay project thumbnails'
                     ></img>
                   </a>
-                  <h2 className='project-title'>{media.name}</h2>
+                  <h2 className='media-title'>{media.name}</h2>
                 </div>
               );
             })}

@@ -6,6 +6,10 @@
 .pem
 .pub
 
+env
+.env
+./env
+
 # dependencies
 node_modules
 /node_modules
