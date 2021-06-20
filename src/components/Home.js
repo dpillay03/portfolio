@@ -2,9 +2,8 @@ import React from "react";
 import "../style/home.scss";
 import Portrait from "../assets/brand_image.png";
 import Rollodex from "../assets/rollodex.png";
-import { BsPersonLinesFill } from "react-icons/bs";
+import { BsPersonLinesFill, BsTools } from "react-icons/bs";
 import { FiCodepen } from "react-icons/fi";
-import { BsTools } from "react-icons/bs";
 
 export default class Home extends React.Component {
   render() {
