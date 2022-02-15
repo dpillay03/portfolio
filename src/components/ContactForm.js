@@ -1,6 +1,8 @@
+import React from "react";
 import { useForm } from "react-hook-form";
 import emailjs from "emailjs-com";
 import { ToastContainer, toast } from "react-toastify";
+import "../style/contact.scss";
 import "react-toastify/dist/ReactToastify.min.css";
 
 const ContactForm = () => {
@@ -93,7 +95,7 @@ const ContactForm = () => {
                           /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,
                       })}
                       className='form-control formInput'
-                      placeholder='Email address'
+                      placeholder='Email'
                     ></input>
                     {errors.email && (
                       <span className='errorMessage'>
@@ -134,6 +136,7 @@ const ContactForm = () => {
                       name='message'
                       {...register("message", { required: true })}
                       className='form-control formInput'
+                      id='message-input'
                       placeholder='Message'
                     ></textarea>
                     {errors.message && (

@@ -1,33 +1,45 @@
+.contact-page {
+  min-height: 100vh;
+}
 .contact-header {
   margin-bottom: 100px;
 }
 .ContactForm {
   max-width: 600px;
   margin: 0 auto;
-  padding: 0px;
+  padding: 0;
 }
 .form-control {
   margin: 10px;
+  border: 2px solid #232640;
 }
+.formInput {
+  color: #000000;
+}
+#message-input {
+  height: 250px;
+}
+
+textarea::placeholder {
+  opacity: 1;
+}
+
 .submit-btn {
-  background-color: #0f0717;
-  border: 1px solid #37313e;
-  font-family: "Quicksand", sans-serif;
-  color: #6efcf1;
-  padding: 16px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  margin-left: 50px;
-  margin-right: 50px;
-  transition-duration: 0.4s;
+  background-color: #d3681c;
+  border-radius: 3px;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  border-style: none;
+  position: relative;
+  margin: 0 auto;
+  display: block;
   cursor: pointer;
+  transition-duration: 0.4s;
 }
 .submit-btn:hover {
   background-color: #ffffff;
-  color: #6efcf1;
+  color: #d3681c;
 }
 #contact-container {
   width: 500px;
@@ -37,19 +49,38 @@
   margin-top: 75px;
   margin-bottom: 20px;
 }
-.social-container {
+#social-container {
+  text-align: center;
   margin-left: 15px;
   margin-right: 15px;
-  display: inline;
+  display: inline-block;
 }
-
+a {
+  text-decoration: none;
+}
+.contact-social-icon {
+  margin: 0 auto;
+  text-align: center;
+  transition: 0.4s;
+  color: #1a202c;
+}
+.contact-social-icon:hover {
+  color: #fe883c;
+}
 #contact-button-container {
   text-align: center;
   margin: 0 auto;
   margin-bottom: 100px;
 }
+.social-container {
+  margin: 0 auto;
+  text-align: center;
+}
 
 @media only screen and (max-width: 800px) {
+  .ContactForm {
+    width: 400px;
+  }
   #contact-container {
     width: 100%;
   }

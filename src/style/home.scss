@@ -1,279 +1,170 @@
-#daniel {
-  left: 0px;
-  top: 0px;
-  position: absolute;
-  font-size: 50px;
-  opacity: 0.04;
-  color: white;
-  text-shadow: 2px 2px 10px black;
-  font-family: "Zen Dots", cursive;
-}
-#pillay {
-  right: 0px;
-  top: 0px;
-  position: absolute;
-  font-size: 50px;
-  opacity: 0.04;
-  color: white;
-  text-shadow: 2px 2px 10px black;
-  font-family: "Zen Dots", cursive;
-}
-
-/* HEADER */
-.home-container {
-  margin-bottom: 100px;
+/* Home Header */
+#page {
   width: 100%;
-  #home-header-container {
-    margin: 0 auto;
-    width: 60%;
-  }
-  #home-header {
-    text-align: center;
-    font-family: "Krona One", sans-serif;
-    font-weight: bolder;
-    font-size: 100px;
-    line-height: 110px;
-    background: #12c2e9; /* fallback for old browsers */
-    background: -webkit-linear-gradient(
-      to right,
-      #f64f59,
-      #c471ed,
-      #12c2e9
-    ); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(
-      to right,
-      #f64f59,
-      #c471ed,
-      #12c2e9
-    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-  #home-subheader {
-    text-align: center;
-    color: rgb(180, 180, 180);
-    font-family: "Quicksand", sans-serif;
-    font-size: 25px;
-  }
 }
-
-/* ABOUT */
-#about-container {
-  margin: 0 auto;
-  width: 60%;
+#container {
+  display: block;
 }
-#portrait {
+.tsparticles-canvas-el {
+  background: #232640;
+  padding: 10px;
+  display: block;
+  width: 100%;
+}
+#hero-image {
   width: 150px;
   margin: 0 auto;
-  margin-bottom: 20px;
   display: block;
-  opacity: 0.8;
+  padding-top: 20px;
+  position: relative;
+  pointer-events: none;
 }
-#about-me {
-  font-family: "Montserrat", sans-serif;
-  color: rgb(180, 180, 180);
-  font-size: 18px;
+#hero-header {
+  color: #ff7800;
   text-align: center;
-  width: 80%;
-  margin: 0 auto;
-  margin-bottom: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 200;
+  font-size: 18px;
+  pointer-events: none;
+  #dev {
+    font-family: "Source Code Pro", monospace;
+    font-size: 23px;
+    font-weight: bold;
+  }
+  #des {
+    font-family: "Poiret One", cursive;
+    font-weight: bold;
+    font-size: 25px;
+  }
+  #crea {
+    font-family: "Gluten", cursive;
+    font-size: 25px;
+  }
+  .header-divider {
+    color: #fff;
+    pointer-events: none;
+  }
 }
 
-#button-container {
-  text-align: center;
-}
-.contact-btn {
-  background-color: #0f0717;
-  border: 1px solid #37313e;
-  font-family: "Quicksand", sans-serif;
-  color: #6efcf1;
-  padding: 16px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  margin-left: 50px;
-  margin-right: 50px;
+.contact-button {
+  background-color: #d3681c;
+  border-radius: 3px;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  border-style: none;
+  position: relative;
+  margin: 0 auto;
+  display: block;
   transition-duration: 0.4s;
+}
+.contact-button:hover {
+  background-color: white;
+  color: #d3681c;
   cursor: pointer;
 }
-.contact-btn:hover {
-  background-color: #ffffff;
-  color: #00ccff;
-}
-
-#app-of-day-container {
-  width: 60%;
-  background: linear-gradient(153deg, #865b75 0, #383a51 95%);
-  border: 1px solid rgba(255, 255, 255, 0.17);
-  margin: 0 auto;
-  margin-top: 25px;
-  border-radius: 10px;
-  padding: 20px;
-  #app-text-container {
-    width: 60%;
-    display: inline-block;
-    #app-of-day-header {
-      font-family: "Bebas Neue", cursive;
-      font-size: 70px;
-      color: white;
-      font-weight: bolder;
-      margin-bottom: 0;
-    }
-    #app-of-day-text {
-      width: 100%;
-      padding-left: 20px;
-    }
-    #app-of-day-description {
-      width: 100%;
-      font-family: "Montserrat", sans-serif;
-      color: rgb(180, 180, 180);
-      font-size: 18px;
-    }
-  }
-  #rollodex-svg {
-    width: 250px;
-    margin-top: 50px;
-    text-align: right;
-  }
-}
-
-/* Skilss & Experience */
-.columns {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  margin: 5px 0;
-}
-
-.column {
-  flex: 1;
-  margin: 2px;
-  padding: 10px;
-  &:first-child {
-    margin-left: 0;
-  }
-  &:last-child {
-    margin-right: 0;
-  }
-}
-h2.tech-skills-headers {
-  font-family: "Quicksand", sans-serif;
+#hero-subheader {
   color: white;
   text-align: center;
-}
-ul li:before {
-  content: "✓";
-  color: rgb(0, 140, 186);
-  padding: 5px;
-}
-li {
-  color: rgb(180, 180, 180);
   font-family: "Montserrat", sans-serif;
-  text-align: left;
-  list-style: none;
+  font-weight: bold;
+  font-size: 20px;
+  pointer-events: none;
+  .sub-header-focus {
+    color: #ff7800;
+    font-weight: bolder;
+  }
 }
-#skills-container {
-  width: 60%;
-  margin: 0 auto;
 
-  padding-bottom: 100px;
+.react-slideshow-container .default-nav {
+  background: #232640;
 }
-.skills-subheader {
-  font-family: "Bebas Neue", cursive;
-  font-size: 40px;
+
+/* Projects Section */
+.home-projects {
+  margin-top: 100px;
+}
+.slideshow-container {
+  padding: 10px;
+  margin-top: 100px;
+}
+
+#projects-button {
+  background-color: #d3681c;
+  border-radius: 3px;
   color: white;
-  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  border-style: none;
+  position: relative;
+  margin: 0 auto;
+  display: block;
+  transition-duration: 0.4s;
 }
-.skills {
+#projects-button:hover {
+  background-color: white;
+  color: #d3681c;
+  cursor: pointer;
+}
+.more-projects-button {
+  margin-top: 50px;
+}
+
+/* Skills Section */
+#home-skills {
+  margin-top: 20px;
+  text-align: center;
   margin: 0 auto;
 }
-.position {
+#home-experience {
+  max-width: 600px;
+  text-align: center;
+  margin: 0 auto;
+}
+#experience-title {
+  font-family: proxima-nova, sans-serif;
+  font-weight: bold;
+}
+#experience-company,
+#experience-position,
+#experience-date {
+  text-align: left;
+  width: 400px;
+  margin: 0 auto;
+}
+
+#experience-company {
+  font-size: 20px;
+  font-family: proxima-nova, sans-serif;
+  font-weight: 900;
+}
+#experience-position {
+  font-size: 15px;
   font-family: "Montserrat", sans-serif;
   font-weight: bolder;
-  font-size: 21px;
-  color: white;
 }
-.title {
-  font-family: "Quicksand", sans-serif;
-  font-size: 18px;
-  color: rgb(180, 180, 180);
+#experience-date {
+  font-size: 12px;
+  font-family: proxima-nova, sans-serif;
+  // font-weight: bolder;
+  color: #d3681cdc;
+  margin-bottom: 0px;
+  padding-bottom: 20px;
 }
-.years {
-  font-family: "Quicksand", sans-serif;
-  font-size: 16px;
-  color: rgb(0, 140, 186);
-}
-
-/* Media Queries */
 @media only screen and (max-width: 800px) {
-  .top-nav-section {
-    display: none;
+  #hero-subheader {
+    font-size: 17px;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 10px;
   }
-  #home-header-container {
-    width: 100%;
-  }
-  .home-container #home-header-container {
+  #home-experience {
     width: 95%;
   }
-  .home-container #home-header {
-    font-size: 50px;
-    line-height: 50px;
-    width: 100%;
-  }
-  #daniel {
-    display: none;
-  }
-  #pillay {
-    display: none;
-  }
-  .home-container #home-subheader {
-    text-align: center;
-    color: rgb(180, 180, 180);
-    font-family: "Quicksand", sans-serif;
-    font-size: 18px;
-  }
-  #about-container {
-    width: 98%;
-  }
-  #about-me {
-    width: 98%;
-  }
-  #resume-btn {
-    margin-top: 30px;
-  }
-  #skills-container {
-    width: 80%;
-    margin: 0 auto;
-  }
-  .columns .column {
-    margin-bottom: 5px;
-    flex-basis: 40%;
-    &:nth-last-child(2) {
-      margin-right: 0;
-    }
-    &:last-child {
-      flex-basis: 100%;
-      margin: 0;
-    }
-  }
 }
 
-@media only screen and (max-width: 1045px) {
-  #rollodex-svg {
-    display: none;
-  }
-  #app-of-day-header {
-    text-align: center;
-  }
-  #app-of-day-container #app-text-container {
-    width: 100%;
-    display: block;
-    margin: 0 auto;
-  }
-  .columns .column {
-    flex-basis: 100%;
-    margin: 0 0 5px 0;
+@media only screen and (min-width: 1024px) {
+  #home-experience {
+    max-width: 95%;
   }
 }
