@@ -1,8 +1,8 @@
 import React from "react";
-import ALCW from "../../assets/AmazingLifeChiro.png";
+import ALCW from "../../assets/amazinglifechiro.png";
 import FSMedia from "../../assets/FlowStateMedia.png";
 import SubredditSearch from "../../assets/subreddit.png";
-import Execute from "../../assets/execute.png";
+import Execute from "../../assets/Execute.png";
 import CombatCapitol from "../../assets/combatcapitol.png";
 import PortfolioPic from "../../assets/PortfolioProj.png";
 

@@ -1,7 +1,7 @@
 import React from "react";
 import "../style/projects.scss";
 import { Zoom } from "react-slideshow-image";
-import ALCW from "../assets/AmazingLifeChiro.png";
+import ALCW from "../assets/amazinglifechiro.png";
 import FSM from "../assets/FlowStateMedia.png";
 import PortfolioThumb from "../assets/PortfolioProj.png";
 
