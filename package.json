@@ -64,12 +64,5 @@
   "devDependencies": {
     "autoprefixer": "^10.4.2",
     "postcss": "^8.4.6"
-  },
-  "react-dotenv": {
-    "whitelist": [
-      "REACT_APP_SERVICE_ID",
-      "REACT_APP_TEMPLATE_ID",
-      "REACT_APP_USER_ID"
-    ]
   }
 }
