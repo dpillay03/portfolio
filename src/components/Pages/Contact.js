@@ -13,7 +13,9 @@ export default class Contact extends React.Component {
     return (
       <React.Fragment>
         <section id='page' className='contact-page'>
-          <h1 className='section-titles'>LET'S GET IN TOUCH!</h1>
+          <h1 className='section-titles' id='contact-title'>
+            LET'S GET IN TOUCH!
+          </h1>
           <div className='social-container'>
             <a
               href='https://linkedin.com/in/danielpillay'

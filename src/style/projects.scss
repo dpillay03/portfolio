@@ -28,14 +28,18 @@
 }
 
 /* PROJECT PAGE */
-html {
-  scroll-behavior: smooth;
+#githubLink {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  font-size: 13px;
 }
 
 a.project-link {
   background-color: #d3681c;
   text-decoration: none;
+  font-family: "Montserrat", sans-serif;
   color: white;
+  font-size: 13px;
   border-radius: 0.25rem;
   text-align: center;
   display: inline-block;
@@ -82,8 +86,9 @@ a.project-link:hover {
 .project-section > ul > li > figure > figcaption {
   position: absolute;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.4);
   width: 100%;
+  height: 50px;
 }
 
 .project-section > ul > li > figure > figcaption > h3 {
@@ -100,10 +105,22 @@ a.project-link:hover {
   line-height: 1.5;
   padding: 1rem 0.75rem;
   color: #181f24;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
 }
+
 .project-section > ul > li > .project-link {
   padding: 0.5rem 1rem;
   margin: 0.5rem;
+  text-align: center;
+  width: 45%;
+}
+.project-section > ul > li > p.project-built {
+  padding: 1rem 0.75rem;
+  text-align: left;
+  font-size: 12px;
+  font-weight: bold;
+  font-family: "Source Code Pro", monospace;
 }
 
 ul {
@@ -137,6 +154,7 @@ ul {
   .project-section {
     margin: 0 auto;
     padding-top: 50px;
+    padding-bottom: 50px;
   }
   .project-section > ul {
     display: block;

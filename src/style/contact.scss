@@ -1,13 +1,13 @@
 .contact-page {
-  min-height: 100vh;
+  min-height: 90vh;
 }
 .contact-header {
-  margin-bottom: 100px;
+  margin-bottom: 150px;
 }
 .ContactForm {
   max-width: 600px;
   margin: 0 auto;
-  padding: 0;
+  padding-top: 50px;
 }
 .form-control {
   margin: 10px;
@@ -78,8 +78,11 @@ a {
 }
 
 @media only screen and (max-width: 800px) {
+  #contact-title {
+    font-size: 30px;
+  }
   .ContactForm {
-    width: 400px;
+    max-width: 400px;
   }
   #contact-container {
     width: 100%;

@@ -10,10 +10,10 @@ import Resume from "../../assets/Daniel_Pillay_Resume.PDF";
 import {
   TiSocialLinkedinCircular,
   TiSocialInstagramCircular,
-  TiSocialFacebookCircular,
   TiSocialGithubCircular,
   TiSocialYoutubeCircular,
 } from "react-icons/ti";
+import LazyLoad from "react-lazyload";
 
 export default class About extends React.Component {
   render() {
@@ -25,29 +25,31 @@ export default class About extends React.Component {
             <h1 className='section-titles'>
               <span id='my-mission'>MY STORY, MY MISSION</span>
             </h1>
-            <img
-              src={Headshot}
-              id='headshot'
-              className='about-left about-img'
-              alt="Daniel Pillay's headshot/professional"
-            ></img>
-
+            <LazyLoad height={400}>
+              <img
+                src={Headshot}
+                id='headshot'
+                className='about-left about-img'
+                alt="Daniel Pillay's headshot/professional"
+              ></img>
+            </LazyLoad>
             <p className='about-text'>
-              Hi! My name Daniel Pillay. I am a Software Engineer who
-              specializes in full stack development. I am a computer science
-              major at Colorado State University - Global Campus and I am
-              expected to graduate in January of 2022. I have also earned a
+              Hi! My name Daniel Pillay. I am a Software Developer who
+              specializes in frontend and full-stack development. After
+              honorably seperating from the United States Air Force in 2017 I
+              decided to chase my passion and transitioned into the tech
+              industry. I have a bachelors degree in Computer Science from
+              Colorado State University, Global Campus. I also earned a
               certificate of Advanced Software Development in Full Stack
-              JavaScript at Code Fellows Coding Bootcamp located in Seattle,
-              Washington. I have both industry and freelance experience building
-              websites and managing marketing campaigns for a wide range of
-              clients and companies.
+              JavaScript from Code Fellows Coding Bootcamp located in Seattle,
+              Washington.
             </p>
             {/* <br /> */}
             <p className='about-text'>
-              After honorably seperating from the United States Air Force in
-              2017 I decided to chase my passion and transitioned into the tech
-              industry. I launched my web design company{" "}
+              I have industry and freelance experience building websites and
+              managing digital marketing campaigns for a diverse range of
+              clients and companies. In 2017 I also launched my web design
+              company{" "}
               <a
                 id='fsm-link'
                 href='https://flowstatemedia.io'
@@ -61,11 +63,9 @@ export default class About extends React.Component {
             </p>
             {/* <br /> */}
             <p className='about-text'>
-              On my free time, I like to partake in various hobbies and
-              activities. I love training Brazilian Jiu-jitsu, skydiving,
-              playing the guitar (Fender Deluxe Roadhouse for my fellow
-              guitarists), surfing, hiking, reading, listening to podcasts,
-              snorkeling, family time, and much more.
+              In my free time, I love training Brazilian Jiu-jitsu, skydiving,
+              playing the guitar, surfing, hiking, reading, listening to
+              podcasts, snorkeling, family time, and much more.
             </p>
             {/* <br /> */}
             <p className='about-text'>
@@ -121,36 +121,44 @@ export default class About extends React.Component {
             </div>
 
             <div className='imageColumn'>
-              <img
-                className='about-image-bottom'
-                src={AirForce}
-                alt='Daniel Pillay in Air Force Uniform'
-                style={{ width: "100%" }}
-              />
+              <LazyLoad height={250}>
+                <img
+                  className='about-image-bottom'
+                  src={AirForce}
+                  alt='Daniel Pillay in Air Force Uniform'
+                  style={{ width: "100%" }}
+                />
+              </LazyLoad>
             </div>
             <div className='imageColumn'>
-              <img
-                className='about-image-bottom'
-                src={BJJ}
-                alt='Daniel Pillay in with Checkmat Founder Leo Vieira'
-                style={{ width: "100%" }}
-              />
+              <LazyLoad height={250}>
+                <img
+                  className='about-image-bottom'
+                  src={BJJ}
+                  alt='Daniel Pillay in with Checkmat Founder Leo Vieira'
+                  style={{ width: "100%" }}
+                />
+              </LazyLoad>
             </div>
             <div className='imageColumn'>
-              <img
-                className='about-image-bottom'
-                src={Skydive}
-                alt='Daniel Pillay Skydiving'
-                style={{ width: "100%" }}
-              />
+              <LazyLoad height={250}>
+                <img
+                  className='about-image-bottom'
+                  src={Skydive}
+                  alt='Daniel Pillay Skydiving'
+                  style={{ width: "100%" }}
+                />
+              </LazyLoad>
             </div>
             <div className='imageColumn'>
-              <img
-                className='about-image-bottom'
-                src={Surf}
-                alt='Daniel Pillay Surfing'
-                style={{ width: "100%" }}
-              />
+              <LazyLoad height={250}>
+                <img
+                  className='about-image-bottom'
+                  src={Surf}
+                  alt='Daniel Pillay Surfing'
+                  style={{ width: "100%" }}
+                />
+              </LazyLoad>
             </div>
           </section>
         </section>

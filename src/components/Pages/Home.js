@@ -9,6 +9,7 @@ import ParticleJS from "../Particles";
 import HomeProjectSlideshow from "../HomeProjectSlideshow";
 import { Link } from "react-router-dom";
 import ScrollToTop from "react-router-scroll-top";
+import LazyLoad from "react-lazyload";
 
 export default class Home extends React.Component {
   render() {
@@ -18,11 +19,13 @@ export default class Home extends React.Component {
           <div id='container'>
             <section id='home-header' className='section-headers'>
               <ParticleJS />
-              <img
-                src={Headshot}
-                id='hero-image'
-                alt='Cartoon headshot of Daniel Pillay'
-              />
+              <LazyLoad width={150}>
+                <img
+                  src={Headshot}
+                  id='hero-image'
+                  alt='Cartoon headshot of Daniel Pillay'
+                />
+              </LazyLoad>
               <p id='hero-header'>
                 <span id='dev'>developer</span>{" "}
                 <span className='header-divider'>|</span>{" "}

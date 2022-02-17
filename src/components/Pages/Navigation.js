@@ -16,7 +16,6 @@ import Projects from "./Projects";
 import SinglePost from "../../components/SinglePost";
 import Post from "./Post";
 import Contact from "./Contact";
-import Experience from "./Experience";
 import DarkMode from "../DarkMode";
 import NavLogo from "../../assets/logo.png";
 
@@ -171,7 +170,6 @@ export default class Navigation extends React.Component {
             <Route exact path='/' component={Home} />
             <Route exact path='/projects' component={Projects} />
             <Route exact path='/about' component={About} />
-            <Route exact path='/experience' component={Experience} />
             <Route exact path='/post/:slug' component={SinglePost} />
             <Route exact path='/blog' component={Post} />
             <Route exact path='/contact' component={Contact} />

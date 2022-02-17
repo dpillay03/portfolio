@@ -57,6 +57,7 @@ header {
 .dark-mode {
   color: rgb(254, 255, 254);
   transition: color 0.5s ease-in;
+
   #nav-header {
     color: #fff;
   }
@@ -155,8 +156,12 @@ header {
   .project-section > ul > li > figure > figcaption {
     background-color: rgba(0, 0, 0, 0.75);
   }
+
   .form-control {
     border: 1px solid #fe883c;
+  }
+  .project-section > ul > li > p.project-built {
+    color: white;
   }
 }
 
