@@ -57,16 +57,15 @@ header {
 .dark-mode {
   color: rgb(254, 255, 254);
   transition: color 0.5s ease-in;
-
   #nav-header {
     color: #fff;
   }
   #page {
-    background-color: #181f24;
+    background-color: #232640;
   }
 
   .section-titles {
-    color: #fff;
+    color: #fe883c;
   }
   #d {
     color: #fe883c;
@@ -93,7 +92,7 @@ header {
     font-size: 10px;
   }
   .skills {
-    background-color: rgb(24, 23, 25);
+    background-color: #1a202c;
   }
   .skills .card:hover h4,
   .skills .card:hover p {
@@ -109,8 +108,11 @@ header {
   .home-blog-description {
     color: #9b9999;
   }
+  .about-page {
+    background-color: #232640;
+  }
   #about-section {
-    background-color: #181f24;
+    background-color: #232640;
   }
   .about-quote {
     background-color: #fe883c;
@@ -128,11 +130,11 @@ header {
     background-color: #1a202c;
   }
   .contact-social-icon {
-    color: #fe883c;
+    color: white;
     transition: 0.4s;
   }
   .contact-social-icon:hover {
-    color: white;
+    color: #fe883c;
     cursor: pointer;
   }
   .project-overlay {
@@ -155,6 +157,12 @@ header {
   }
   .project-section > ul > li > figure > figcaption {
     background-color: rgba(0, 0, 0, 0.75);
+  }
+  li.project {
+    background-color: #1a202c;
+    border: 0.1px solid #000000;
+    box-shadow: 6px 6px 8px 0 #000000, -4px -4px 8px 0 rgba(0, 0, 0, 0.3);
+    padding: 5px;
   }
 
   .form-control {

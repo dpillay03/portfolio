@@ -7,6 +7,10 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
+#page {
+  padding-bottom: 50px;
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -17,13 +21,22 @@ body {
 .section-titles {
   text-align: center;
   font-family: proxima-nova, sans-serif;
-  letter-spacing: 3px;
+  letter-spacing: 4px;
   font-size: 50px;
   font-weight: 800;
   font-style: normal;
-  color: #1a202c;
-  padding-top: 20px;
+  color: #232640;
+  padding-top: 30px;
 }
+#home-section-title {
+  padding-top: 25px;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  position: absolute;
+  left: 0;
+  vertical-align: middle;
+}
+
 a:hover {
   text-decoration: none;
 }
@@ -31,29 +44,37 @@ a:hover {
 /* FOOTER */
 footer {
   background: #1a202c;
-
   border-top: 1px solid #ff770080;
   border-top-style: inset;
-  height: 120px;
-
+  padding: 20px;
   #footer-copyright {
     text-align: center;
     padding-top: 10px;
-    font-family: "Montserrat", sans-serif;
-    font-weight: bold;
-    color: #fe883c;
+    font-family: proxima-nova, sans-serif;
+    font-weight: 500;
+    color: white;
     font-size: 15px;
     vertical-align: middle;
   }
-  #footer-contact-btn {
-    margin-bottom: 40px;
+  #footer-social {
+    color: #fe883c;
+  }
+  #footer-social:hover {
+    color: #ffffff;
   }
 }
 
-@media only screen and (max-width: 700px) {
-  .section-titles {
-    font-size: 50x;
-    margin-bottom: 30px;
+@media only screen and (max-width: 800px) {
+  #home-section-title {
+    text-align: center;
+    font-family: proxima-nova, sans-serif;
+    letter-spacing: 4px;
+    font-size: 50px;
+    font-weight: 800;
+    font-style: normal;
+    color: #232640;
+    writing-mode: horizontal-tb;
+    position: relative;
   }
   p#footer-copyright {
     font-weight: 200;

@@ -4,10 +4,16 @@
 .contact-header {
   margin-bottom: 150px;
 }
+.container {
+  padding: 0;
+  margin: 0;
+}
+
 .ContactForm {
   max-width: 600px;
   margin: 0 auto;
   padding-top: 50px;
+  text-align: center;
 }
 .form-control {
   margin: 10px;
@@ -15,6 +21,9 @@
 }
 .formInput {
   color: #000000;
+}
+.form-control .formInput {
+  font-family: "Montserrat", sans-serif;
 }
 #message-input {
   height: 250px;
@@ -76,8 +85,12 @@ a {
   margin: 0 auto;
   text-align: center;
 }
-
 @media only screen and (max-width: 800px) {
+  .container {
+    width: 95%;
+    padding: 0;
+    margin: 0;
+  }
   #contact-title {
     font-size: 30px;
   }

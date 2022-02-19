@@ -8,7 +8,10 @@ import { BsTools } from "react-icons/bs";
 const Skills = () => {
   return (
     <div className='skills'>
-      <p className='section-titles'> SKILLS </p>
+      <p className='section-titles' id='home-section-title'>
+        {" "}
+        SKILLS{" "}
+      </p>
       <div className='skills-container'>
         <div className='text'></div>
 
@@ -19,7 +22,7 @@ const Skills = () => {
             </i>
             <h4 className='skill-title'>Programming Languages</h4>
             <p className='skill-description'>
-              JavaScript, Java, Python, SQL, HTML, CSS/SCSS, and more.
+              JavaScript, Java, Python, PHP, SQL, HTML5, CSS/SCSS, and more.
             </p>
           </div>
 

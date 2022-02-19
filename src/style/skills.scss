@@ -1,10 +1,10 @@
 :root {
   --main-color: #ff7800;
   --second-color: #232640;
-  --third-color: #cfcfcf;
-  --bg-color: #dfdfdf77;
-  --main-grid: repeat(auto-fill, minmax(300px, 1fr));
-  --main-padding: 40px;
+  --third-color: #fff;
+  --bg-color: #f8f8f8;
+  --main-grid: repeat(auto-fill, minmax(250px, 2fr));
+  --main-padding: 30px;
 }
 
 .skills-container {
@@ -16,19 +16,19 @@
 
 @media (min-width: 768px) {
   .skills-container {
-    width: 750px;
+    width: 90%;
   }
 }
 
 @media (min-width: 992px) {
   .skills-container {
-    width: 970px;
+    width: 50%;
   }
 }
 
 @media (min-width: 1200px) {
   .skills-container {
-    width: 1170px;
+    width: 70%;
   }
 }
 
@@ -45,7 +45,7 @@
 }
 
 .skills h2 {
-  font-size: 35px;
+  font-size: 30px;
   color: var(--second-color);
   padding-bottom: 20px;
 }
@@ -56,9 +56,9 @@
 
 .skills-description {
   font-family: "Montserrat", sans-serif;
-  font-size: 18px;
+  font-size: 14px;
   color: var(--second-color);
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .skills .skill-card {
@@ -83,14 +83,16 @@
   padding-top: 30px;
   padding-bottom: 10px;
   font-family: proxima-nova, sans-serif;
-  font-size: 25px;
-  font-weight: 500;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: default;
 }
 
 .skills .card p {
   line-height: 1.7;
   font-size: 16px;
   color: var(--third-color);
+  cursor: default;
 }
 
 .skills .card i {
@@ -109,19 +111,9 @@
   transform: rotate(0turn);
 }
 
-.skills .card:hover {
-  background-color: transparent;
-}
-
 .skills .card:hover i {
   transform: rotate(0deg);
   background-color: var(--main-color);
-}
-
-.skills .card:hover h4,
-.skills .card:hover p {
-  transition: 1s;
-  color: var(--second-color);
 }
 
 .skills a {
@@ -134,9 +126,11 @@
   letter-spacing: 1.5px;
   z-index: 50px;
   text-decoration: none;
+  cursor: default;
 }
 
 .skills a:hover {
   background-color: var(--second-color);
   color: var(--main-color);
+  cursor: default;
 }
