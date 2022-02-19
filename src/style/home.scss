@@ -1,6 +1,7 @@
 /* Home Header */
 #page {
   width: 100%;
+  min-height: 100%;
 }
 #container {
   display: block;
@@ -10,6 +11,7 @@
   padding: 10px;
   display: block;
   width: 100%;
+  border-bottom: 1px solid white;
 }
 #hero-image {
   width: 150px;
@@ -18,7 +20,7 @@
   padding-top: 20px;
   position: relative;
   pointer-events: none;
-  filter: grayscale(30%);
+  filter: grayscale(20%);
 }
 #hero-header {
   color: #ff7800;
@@ -111,7 +113,7 @@
   margin-top: 50px;
 }
 
-/* Skills Section */
+/* Experience Section */
 #home-skills {
   margin-top: 20px;
   text-align: center;
@@ -154,10 +156,13 @@
 }
 @media only screen and (max-width: 800px) {
   #hero-subheader {
-    font-size: 17px;
+    font-size: 15px;
     width: 90%;
     margin: 0 auto;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+  }
+  #hero-image {
+    width: 120px;
   }
   #home-experience {
     width: 95%;

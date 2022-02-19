@@ -142,7 +142,7 @@ export default class Navigation extends React.Component {
                     sidebar: {
                       backgroundColor: "#232640",
                       height: "500px",
-                      borderBottomRightRadius: "100px",
+                      borderBottomRightRadius: "50px",
                     },
                   }}
                 >

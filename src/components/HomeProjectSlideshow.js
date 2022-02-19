@@ -10,7 +10,9 @@ const slideImages = [ALCW, FSM, PortfolioThumb];
 const HomeProjectSlideshow = () => {
   return (
     <div className='slide-container'>
-      <p className='section-titles'>PROJECTS</p>
+      <p className='section-titles' id='home-section-title'>
+        PROJECTS
+      </p>
       <Zoom scale={0.4}>
         {slideImages.map((each, index) => (
           <img

@@ -31,7 +31,7 @@ export default class ProjectList extends Component {
         );
       }
       return (
-        <li key={i}>
+        <li className='project' key={i}>
           <figure>
             <img
               className='project-image'

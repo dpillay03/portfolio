@@ -1,10 +1,6 @@
 import React from "react";
 import "../../style/about.scss";
 import "../../style/darkmode.scss";
-import AirForce from "../../assets/military_pic.jpg";
-import BJJ from "../../assets/daniel_leoVieira.JPG";
-import Skydive from "../../assets/skydive.JPG";
-import Surf from "../../assets/surf.JPG";
 import Headshot from "../..//assets/headshot.PNG";
 import Resume from "../../assets/Daniel_Pillay_Resume.PDF";
 import {
@@ -14,11 +10,17 @@ import {
   TiSocialYoutubeCircular,
 } from "react-icons/ti";
 import LazyLoad from "react-lazyload";
+import AirForce from "../../assets/military_pic.jpg";
+import BJJ from "../../assets/daniel_leoVieira.JPG";
+import Skydive from "../../assets/skydive.JPG";
+import Surf from "../../assets/surf.JPG";
+import ScrollToTop from "react-router-scroll-top";
 
 export default class About extends React.Component {
   render() {
     return (
       <React.Fragment>
+        <ScrollToTop />
         <section id='page' className='about-page'>
           {/* ABOUT HEADER */}
           <section id='about-section'>
@@ -119,46 +121,47 @@ export default class About extends React.Component {
                 />
               </a>
             </div>
-
-            <div className='imageColumn'>
-              <LazyLoad height={250}>
-                <img
-                  className='about-image-bottom'
-                  src={AirForce}
-                  alt='Daniel Pillay in Air Force Uniform'
-                  style={{ width: "100%" }}
-                />
-              </LazyLoad>
-            </div>
-            <div className='imageColumn'>
-              <LazyLoad height={250}>
-                <img
-                  className='about-image-bottom'
-                  src={BJJ}
-                  alt='Daniel Pillay in with Checkmat Founder Leo Vieira'
-                  style={{ width: "100%" }}
-                />
-              </LazyLoad>
-            </div>
-            <div className='imageColumn'>
-              <LazyLoad height={250}>
-                <img
-                  className='about-image-bottom'
-                  src={Skydive}
-                  alt='Daniel Pillay Skydiving'
-                  style={{ width: "100%" }}
-                />
-              </LazyLoad>
-            </div>
-            <div className='imageColumn'>
-              <LazyLoad height={250}>
-                <img
-                  className='about-image-bottom'
-                  src={Surf}
-                  alt='Daniel Pillay Surfing'
-                  style={{ width: "100%" }}
-                />
-              </LazyLoad>
+            <div id='about-image-section'>
+              <div className='imageColumn'>
+                <LazyLoad height={250}>
+                  <img
+                    className='about-image-bottom'
+                    src={AirForce}
+                    alt='Daniel Pillay in Air Force Uniform'
+                    style={{ width: "100%" }}
+                  />
+                </LazyLoad>
+              </div>
+              <div className='imageColumn'>
+                <LazyLoad height={250}>
+                  <img
+                    className='about-image-bottom'
+                    src={BJJ}
+                    alt='Daniel Pillay in with Checkmat Founder Leo Vieira'
+                    style={{ width: "100%" }}
+                  />
+                </LazyLoad>
+              </div>
+              <div className='imageColumn'>
+                <LazyLoad height={250}>
+                  <img
+                    className='about-image-bottom'
+                    src={Skydive}
+                    alt='Daniel Pillay Skydiving'
+                    style={{ width: "100%" }}
+                  />
+                </LazyLoad>
+              </div>
+              <div className='imageColumn'>
+                <LazyLoad height={250}>
+                  <img
+                    className='about-image-bottom'
+                    src={Surf}
+                    alt='Daniel Pillay Surfing'
+                    style={{ width: "100%" }}
+                  />
+                </LazyLoad>
+              </div>
             </div>
           </section>
         </section>
