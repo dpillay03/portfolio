@@ -50,8 +50,7 @@ export default class About extends React.Component {
             <p className='about-text'>
               I have industry and freelance experience building websites and
               managing digital marketing campaigns for a diverse range of
-              clients and companies. In 2017 I also launched my web design
-              company{" "}
+              clients and companies. In 2017 I launched my web design company{" "}
               <a
                 id='fsm-link'
                 href='https://flowstatemedia.io'
