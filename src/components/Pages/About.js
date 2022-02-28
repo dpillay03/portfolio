@@ -73,11 +73,7 @@ export default class About extends React.Component {
               If you have any questions, want to work with me, or just want to
               say hi - feel free to reach out to me!
             </p>
-            <a href={Resume} target='_blank' rel='noreferrer'>
-              <button id='resume-btn' className='contact-button'>
-                View Resume
-              </button>
-            </a>
+
             <div className='social-container'>
               <a
                 href='https://linkedin.com/in/danielpillay'
