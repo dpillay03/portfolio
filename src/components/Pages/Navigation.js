@@ -3,9 +3,10 @@ import "../../style/nav.scss";
 import { BiMenuAltLeft } from "react-icons/bi";
 import {
   BsHouseDoor,
-  BsFillPersonFill,
+  BsPersonCheck,
   BsCodeSlash,
   BsEnvelope,
+  BsPencilSquare,
 } from "react-icons/bs";
 import { NavLink, BrowserRouter, Route, Switch } from "react-router-dom";
 import ScrollToTop from "react-router-scroll-top";
@@ -38,7 +39,7 @@ export default class Navigation extends React.Component {
         <ScrollToTop>
           <nav>
             <div
-              id='menu-container'
+              id='dropdown-menu-container'
               style={{
                 display: "grid",
                 gridTemplateColumns: "repeat(3, 1fr)",
@@ -82,7 +83,7 @@ export default class Navigation extends React.Component {
                       >
                         {" "}
                         <span className='menu-icon'>
-                          <BsFillPersonFill
+                          <BsPersonCheck
                             className='menu-icon'
                             size={20}
                             style={{
@@ -111,6 +112,25 @@ export default class Navigation extends React.Component {
                           />{" "}
                         </span>
                         Portfolio{" "}
+                      </NavLink>
+
+                      <NavLink
+                        to='/blog'
+                        className='main-menu-item'
+                        style={{ wordSpacing: "10px" }}
+                        onClick={() => this.onSetSidebarOpen(false)}
+                      >
+                        <span className='menu-icon'>
+                          <BsPencilSquare
+                            className='menu-icon'
+                            size={18}
+                            style={{
+                              color: "#fe883c",
+                              verticalAlign: "middle",
+                            }}
+                          />{" "}
+                        </span>
+                        Blog{" "}
                       </NavLink>
 
                       <NavLink
@@ -170,7 +190,7 @@ export default class Navigation extends React.Component {
             <Route exact path='/' component={Home} />
             <Route exact path='/projects' component={Projects} />
             <Route exact path='/about' component={About} />
-            <Route exact path='/post/:slug' component={SinglePost} />
+            <Route exact path='/blog/:slug' component={SinglePost} />
             <Route exact path='/blog' component={Post} />
             <Route exact path='/contact' component={Contact} />
           </Switch>

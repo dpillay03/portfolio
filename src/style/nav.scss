@@ -1,8 +1,8 @@
-#menu-container {
+nav {
   border-bottom: 1px solid #ff770080;
   border-bottom-style: inset;
   background-color: rgb(245, 245, 245);
-  height: 50px;
+  height: 100%;
   width: 100%;
   z-index: 1;
 }
@@ -15,17 +15,18 @@
 #menu-btn:hover {
   cursor: pointer;
 }
+
 #main-menu {
   width: 300px;
-  height: 500px;
+  height: 100%;
   position: relative;
   overflow-y: hidden;
   color: white;
-  border-right: 1.5px solid #ff7800;
-  border-bottom: 3px solid #ff7800;
+  border-right: 2px solid white;
+  border-bottom: 2px solid white;
   border-bottom-right-radius: 50px;
   #nav-logo {
-    width: 100px;
+    width: 90px;
     margin: 0 auto;
     display: block;
     margin-top: 10px;
@@ -33,11 +34,12 @@
   a.main-menu-item:first-child {
     margin-top: 50px;
   }
+
   a.main-menu-item {
     display: block;
     text-align: left;
     margin-left: 75px;
-    margin-top: 60px;
+    margin-top: 40px;
     font-size: 20px;
     color: #fff;
     text-decoration: none;

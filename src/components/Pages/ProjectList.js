@@ -44,7 +44,6 @@ export default class ProjectList extends Component {
           </figure>
           <p className='project-description'>{proj.description}</p>
           <p className='project-built'>Built with: {proj.built}</p>
-
           <a className='project-link' href={proj.link}>
             <TiFlash
               size={30}
