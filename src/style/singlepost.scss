@@ -1,6 +1,6 @@
 .post-wrapper {
   margin: 0 auto;
-  max-width: 900px;
+  max-width: 700px;
 }
 .post-main-image {
   width: 700px;
@@ -8,7 +8,7 @@
   display: block;
 }
 .post-content-container {
-  width: 700px;
+  max-width: 700px;
   margin: 0 auto;
 }
 .post-author-container {
@@ -20,6 +20,7 @@
   font-family: proxima-nova, sans-serif;
   font-weight: 900;
 }
+
 .post-content h2 {
   font-family: proxima-nova, sans-serif;
   font-weight: 700;
@@ -54,6 +55,9 @@
 @media only screen and (max-width: 900px) {
   .post-wrapper {
     max-width: 95%;
+  }
+  .blog-header {
+    font-size: 30px;
   }
   .post-content-container {
     width: 90%;

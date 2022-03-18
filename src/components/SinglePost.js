@@ -41,7 +41,7 @@ export default function SinglePost() {
   return (
     <section id='page'>
       <article className='post-article-container'>
-        <h1 className='section-titles '>{singlePost.title}</h1>
+        <h1 className='section-titles blog-header'>{singlePost.title}</h1>
         <img
           className='post-main-image'
           src={singlePost.mainImage.asset.url}
