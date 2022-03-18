@@ -28,7 +28,7 @@ export default function SinglePost() {
             }
           },
           body,
-          "name": author->name,
+          "authorName": author->name,
           "authorImage": author->image
         }`
       )
@@ -39,37 +39,31 @@ export default function SinglePost() {
   if (!singlePost) return <div>Loading...</div>;
 
   return (
-    <main className='blog-wrapper'>
-      <article className='blog-article-container'>
-        <header className='blog-header-container'>
-          <div>
-            <div>
-              <h1 className='page-header'>{singlePost.title}</h1>
-            </div>
-          </div>
-          <img
-            className='blog-main-image'
-            src={singlePost.mainImage.asset.url}
-            alt={singlePost.title}
-          />
-        </header>
-        <div className='blog-content-container'>
+    <section id='page'>
+      <article className='post-article-container'>
+        <h1 className='section-titles '>{singlePost.title}</h1>
+        <img
+          className='post-main-image'
+          src={singlePost.mainImage.asset.url}
+          alt={singlePost.title}
+        />
+        <div className='post-content-container'>
           <BlockContent
-            className='blog-content'
+            className='post-content'
             blocks={singlePost.body}
             projectId='ph4hgpxb'
             dataset='production'
           />
         </div>
-        <div className='blog-author-container'>
+        <div className='post-author-container'>
           <img
             src={urlFor(singlePost.authorImage).url()}
             alt={singlePost.name}
-            className='blog-author-image'
+            className='post-author-image'
           />
-          <p className='blog-author'>{"Written by: " + singlePost.name}</p>
+          <p className='post-author'>{"Written by " + singlePost.authorName}</p>
         </div>
       </article>
-    </main>
+    </section>
   );
 }

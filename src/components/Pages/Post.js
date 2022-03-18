@@ -28,7 +28,7 @@ export default function Post() {
   return (
     <section id='page'>
       <h1 className='section-titles'>ARTICLES & BLOGS</h1>
-      <section>
+      <section id='blog-container'>
         <div className='blog-flex-container'>
           {postData &&
             postData.map((post, index) => (
