@@ -1,68 +1,49 @@
-.home-blog {
-  max-width: 900px;
+.blog-flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   margin: 0 auto;
+  max-width: 90%;
+  margin-top: 80px;
 }
-.home-blog-item {
-  width: 250px;
-  margin-left: 20px;
-  margin-right: 20px;
-  display: inline-block;
-  text-align: center;
+
+.blog-flex-item {
+  width: 400px;
+  margin-left: 30px;
+  margin-left: 30px;
 }
-.home-blog-image {
-  width: 250px;
-}
-.home-blog-title {
-  font-family: proxima-nova, sans-serif;
-  width: 250px;
-  font-weight: 800;
-  font-style: normal;
-  color: #1a202c;
-}
-.home-blog-description {
-  width: 250px;
-  font-family: "Montserrat", sans-serif;
-}
-#article-section {
-  margin-bottom: 100px;
-  width: 100%;
-}
-.article-container {
-  width: 500px;
-  margin: 0 auto;
+
+main #article-container {
+  width: 90%;
+  margin-bottom: 2000px;
 }
 .blog-image {
-  width: 450px;
-  height: 275px;
+  width: 400px;
   margin: 0 auto;
   transition: 0.2s;
 }
 .blog-image:hover {
   opacity: 0.5;
 }
-a.article {
+.blog-description {
   text-decoration: none;
-}
-a.article:visited {
-  color: white;
-}
-h3.blog-title {
-  margin-top: 10px;
-  font-family: "Bebas Neue", cursive;
-  font-size: 35px;
-  color: white;
-  width: 500px;
+  color: black;
+  font-family: proxima-nova, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
   text-align: center;
 }
-
-@media only screen and (max-width: 800px) {
-  .home-blog {
+@media only screen and (max-width: 900px) {
+  .blog-flex-container {
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
   }
-  .home-blog-image {
-    width: 250px;
+  .blog-flex-item {
+    width: 300px;
+    margin: 0 auto;
   }
-  .home-blog-item {
+  .blog-image {
     width: 300px;
   }
 }

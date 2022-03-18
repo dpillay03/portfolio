@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import sanityClient from "../../client.js";
+import "../../style/blog.scss";
 
 export default function Post() {
   const [postData, setPost] = useState(null);
@@ -25,16 +26,16 @@ export default function Post() {
   }, []);
 
   return (
-    <main id='article-section'>
-      <h1 className='page-header'>BLOG</h1>
+    <section id='page'>
+      <h1 className='section-titles'>ARTICLES & BLOGS</h1>
       <section>
-        <div className='row article-container'>
+        <div className='blog-flex-container'>
           {postData &&
             postData.map((post, index) => (
-              <div className='col-sm-6'>
+              <div className='blog-flex-item'>
                 <Link
                   className='article'
-                  to={"/post/" + post.slug.current}
+                  to={"/blog/" + post.slug.current}
                   key={post.slug.current}
                 >
                   <span key={index}>
@@ -44,8 +45,7 @@ export default function Post() {
                       className='blog-image'
                     />
                     <span>
-                      <h3 className='blog-title'>{post.title}</h3>
-                      <h3 className='blog-title'>{post.publishedAt}</h3>
+                      <p className='blog-description'>{post.title}</p>
                     </span>
                   </span>
                 </Link>
@@ -53,6 +53,6 @@ export default function Post() {
             ))}
         </div>
       </section>
-    </main>
+    </section>
   );
 }
