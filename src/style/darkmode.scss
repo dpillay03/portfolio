@@ -76,7 +76,7 @@ header {
   main {
     background-color: #181f24;
   }
-  #menu-container {
+  nav {
     background-color: #1a202c;
   }
 
@@ -173,6 +173,18 @@ header {
   }
   .project-section > ul > li > p.project-built {
     color: white;
+  }
+
+  /* Blog */
+  .blog-description {
+    color: white;
+  }
+  .post-content h1,
+  h2,
+  h3,
+  h4,
+  h4 {
+    color: #fe883c;
   }
 }
 
