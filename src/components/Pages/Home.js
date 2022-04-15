@@ -1,6 +1,6 @@
 import React from "react";
 import "../../style/home.scss";
-import "../../style/darkmode.scss";
+import "../../style/_darkmode.scss";
 import "../../style/skills.scss";
 import "../../style/projects.scss";
 import Skills from "../Skills";
@@ -34,7 +34,7 @@ export default class Home extends React.Component {
               <span id='crea'>creative</span>
             </p>
             <p id='hero-subheader'>
-              Software Developer with a passion for all things
+              UX Engineer with a passion for all things
               <span className='sub-header-focus'> tech</span> and
               <span className='sub-header-focus'> art</span>, preferably in
               <span className='sub-header-focus'> conjuction</span>.
@@ -66,9 +66,13 @@ export default class Home extends React.Component {
             EXPERIENCE
           </p>
           <h3 id='experience-title'>Work</h3>
+          <p id='experience-company'>Trinity Insight</p>
+          <p id='experience-position'>Software Engineer: UX Engineer</p>
+          <p id='experience-date'> April 2022 - Current</p>
+
           <p id='experience-company'>Amazing Life Chiropractic and Wellness</p>
           <p id='experience-position'>Webmaster and Marketing Strategist</p>
-          <p id='experience-date'> January 2019 - Current</p>
+          <p id='experience-date'> January 2019 - April 2022</p>
 
           <p id='experience-company'>Flow State Media</p>
           <p id='experience-position'>Web Designer, Owner</p>
