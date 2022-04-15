@@ -1,17 +1,11 @@
 import React from "react";
-import ProjectList from "./ProjectList";
 
-export default function Project() {
-  return (
-    <React.Fragment>
-      <section id='page'>
-        <h1 className='section-titles'>
-          <span id='my-mission'>PROJECTS</span>
-        </h1>
-        <section className='project-section' id='project-section'>
-          <ProjectList />
-        </section>
-      </section>
-    </React.Fragment>
-  );
+export default class Project extends React.Component {
+  render() {
+    return (
+      <React.Fragment>
+        <h1>Portfolio</h1>
+      </React.Fragment>
+    );
+  }
 }

@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import sanityClient from "../../client.js";
-import "../../style/blog.scss";
 
 export default function Post() {
   const [postData, setPost] = useState(null);

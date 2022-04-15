@@ -1,5 +1,4 @@
 import React from "react";
-import "../style/skills.scss";
 import Particles from "react-particles-js";
 
 const ParticlesJS = () => {
