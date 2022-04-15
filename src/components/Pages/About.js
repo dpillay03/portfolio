@@ -1,8 +1,7 @@
 import React from "react";
 import "../../style/about.scss";
-import "../../style/darkmode.scss";
+import "../../style/_darkmode.scss";
 import Headshot from "../..//assets/headshot.PNG";
-import Resume from "../../assets/Daniel_Pillay_Resume.PDF";
 import {
   TiSocialLinkedinCircular,
   TiSocialInstagramCircular,

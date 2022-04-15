@@ -38,15 +38,8 @@ export default class Navigation extends React.Component {
       <BrowserRouter>
         <ScrollToTop>
           <nav>
-            <div
-              id='dropdown-menu-container'
-              style={{
-                display: "grid",
-                gridTemplateColumns: "repeat(3, 1fr)",
-                gridGap: 10,
-              }}
-            >
-              <div id='left-column'>
+            <div id='3-col-grid'>
+              <div className='3-col-item'>
                 <Sidebar
                   sidebar={
                     <div id='main-menu'>
@@ -173,14 +166,14 @@ export default class Navigation extends React.Component {
                   />
                 </Sidebar>
               </div>
-              <div id='middle-column'>
+              <div className='3-col-item'>
                 <h1 id='nav-header'>
                   {" "}
                   <span id='d'>DANIEL</span> PILLAY
                 </h1>
               </div>
 
-              <div id='right-column'>
+              <div className='3-col-item'>
                 <DarkMode />
               </div>
             </div>

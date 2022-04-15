@@ -1,5 +1,5 @@
 import React from "react";
-import "../style/darkmode.scss";
+import "../style/_darkmode.scss";
 
 const DarkMode = () => {
   const [darkMode, setDarkMode] = React.useState(false);
