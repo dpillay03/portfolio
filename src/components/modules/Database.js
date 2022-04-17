@@ -1,9 +1,4 @@
-import ALCW from "../../assets/amazinglifechiro.png";
-import FSMedia from "../../assets/FlowStateMedia.png";
-import SubredditSearch from "../../assets/subreddit.png";
-import Execute from "../../assets/Execute.png";
-import CombatCapitol from "../../assets/combatcapitol.png";
-import PortfolioPic from "../../assets/PortfolioProj.png";
+import FSM from "../../assets/FSM_Projects.png";
 
 const Projects = [
   {
@@ -11,7 +6,7 @@ const Projects = [
     description:
       "Company website for the Amazing Life Chiropractic and Wellness. Current website is valued at $500,000 dollars",
     built: "WordPress, Divi, various third-party plugins and integrations.",
-    image: ALCW,
+    image: FSM,
     alt: "ALCW responsive thumbnail",
     link: "https://amazinglifechiropractic.com",
     github: undefined,
@@ -21,7 +16,7 @@ const Projects = [
     description:
       "Flow State Media is a Web Design and Google Ads agency for the health, wellness, and fitness industries.",
     built: "WordPress, Divi, various third-party plugins and integrations.",
-    image: FSMedia,
+    image: FSM,
     alt: "FSMedia responsive thumbnail",
     link: "https://flowstatemedia.io",
     github: undefined,
@@ -31,7 +26,7 @@ const Projects = [
     description:
       "A subreddit search engine that returns a list of relevent subreddits based on the users search",
     built: "with ReactJS, HTML5, CSS3, and deployed to GH-Pages",
-    image: SubredditSearch,
+    image: FSM,
     alt: "Subreddit Search Engine responsive thumbnail",
     link: "https://dpillay03.github.io/subreddit/",
     github: "https://github.com/dpillay03/subreddit",
@@ -41,7 +36,7 @@ const Projects = [
     description:
       "Execute is a goal tracking web application that allows users to input and complete their goals.",
     built: "with ReactJS, HTML5, CSS3, and deployed to GH-Pages",
-    image: Execute,
+    image: FSM,
     alt: "Execute - Goal Tracker responsive thumbnail",
     link: "https://dpillay03.github.io/execute/",
     github: "https://github.com/dpillay03/execute",
@@ -51,7 +46,7 @@ const Projects = [
     description:
       "Combat Capitol is a combat sports news application that allows users to read up on the latest news.",
     built: "ReactJS, NewsAPI, HTML5, CSS3, and deployed to GH-Pages",
-    image: CombatCapitol,
+    image: FSM,
     alt: "Combat Capitol responsive thumbnail",
     link: "https://github.com/dpillay03/combatcapitol",
     github: "https://github.com/dpillay03/combatcapitol",
@@ -62,7 +57,7 @@ const Projects = [
       "Software Development portfolio website for Daniel Pillay. This website was created to showcase his work.",
     built:
       "ReactJS, HTML5, SCSS, SanityIO, and more. Website deployed to Netlify",
-    image: PortfolioPic,
+    image: FSM,
     alt: "Daniel Pillay Portfolio responsive thumbnail",
     link: "https://danielpillay.com",
     github: "https://github.com/dpillay03/portfolio",
