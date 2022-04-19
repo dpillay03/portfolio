@@ -18,9 +18,9 @@ export default class About extends React.Component {
               />
             </div>
             <div className='two-col'>
-              <p>My Story. My Mission.</p>
-              <h1>About Me</h1>
-              <p>
+              <p className='subheader-text'>My Story. My Mission.</p>
+              <h1>ABOUT ME</h1>
+              <p className='body-text'>
                 Hi, my name is Daniel. I am an Air Force veteran turned Software
                 Engineer with an affinity for powerful interfaces and seamless
                 experiences. I have a background in web design, web development,
@@ -37,79 +37,100 @@ export default class About extends React.Component {
           </div>
 
           {/* EXPERIENCE */}
-          <h1>Experience</h1>
+          <h1>EXPERIENCE</h1>
           <div className='two-col-container'>
             <div className='two-col'>
-              <h2>Professional</h2>
-              <div>
-                <p>Trinity Insight</p>
-                <p>UX Engineer - Frontend Developer</p>
-                <p>April, 2022 - Current</p>
+              <h2 className='resume-header'>PROFESSIONAL</h2>
+              <div className='resume-card'>
+                <p className='resume-place'>Trinity Insight</p>
+                <p className='resume-title'>
+                  UI/UX Engineer - Frontend Developer
+                </p>
+                <p className='resume-date'>April, 2022 - Current</p>
               </div>
-              <div>
-                <p>Amazing Life Chiropractic and Wellness</p>
-                <p>Web Manager & Marketing Strategist</p>
-                <p>January, 2019 - March 2022</p>
+              <div className='resume-card'>
+                <p className='resume-place'>
+                  Amazing Life Chiropractic and Wellness
+                </p>
+                <p className='resume-title'>
+                  Web Manager & Marketing Strategist
+                </p>
+                <p className='resume-date'>January, 2019 - March 2022</p>
               </div>
-              <div>
-                <p>Flowstate Media</p>
-                <p>Freelance Web Designer, Owner</p>
-                <p>May, 2017 - December 2018</p>
+              <div className='resume-card'>
+                <p className='resume-place'>Flowstate Media</p>
+                <p className='resume-title'>Freelance Web Designer, Owner</p>
+                <p className='resume-date'>May, 2017 - December 2018</p>
               </div>
-              <div>
-                <p>United States Air Force</p>
-                <p>Security Forces Member</p>
-                <p>April, 2013 - April 2017</p>
+              <div className='resume-card'>
+                <p className='resume-place'>United States Air Force</p>
+                <p className='resume-title'>Security Forces Member</p>
+                <p className='resume-date'>April, 2013 - April 2017</p>
               </div>
             </div>
             <div className='two-col'>
-              <h2>Education</h2>
+              <h2 className='resume-header'>EDUCATION</h2>
               <div>
-                <div>
-                  <p>Colorado State University, Global</p>
-                  <p>Bachelor of Science, Computer Science</p>
-                  <p>January, 2020 - January 2022</p>
+                <div className='resume-card'>
+                  <p className='resume-place'>
+                    Colorado State University, Global
+                  </p>
+                  <p className='resume-title'>
+                    Bachelor of Science, Computer Science
+                  </p>
+                  <p className='resume-date'>January, 2020 - January 2022</p>
                 </div>
-                <div>
-                  <p>Codefellows - Coding Bootcamp</p>
-                  <p>
+                <div className='resume-card'>
+                  <p className='resume-place'>Codefellows - Coding Bootcamp</p>
+                  <p className='resume-title'>
                     Certificate: Advanced Software Development in Full Stack
                     JavaScript
                   </p>
-                  <p>January, 2020 - January 2022</p>
+                  <p className='resume-date'>January, 2020 - January 2022</p>
                 </div>
-                <div>
-                  <p>Shoreline Community College</p>
-                  <p>Associate of Arts, Direct Transfer</p>
-                  <p>January, 2018 - December 2019</p>
+                <div className='resume-card'>
+                  <p className='resume-place'>Shoreline Community College</p>
+                  <p className='resume-title'>
+                    Associate of Arts, Direct Transfer
+                  </p>
+                  <p className='resume-date'>January, 2018 - December 2019</p>
                 </div>
               </div>
             </div>
           </div>
           {/* SKILLS */}
+          <h1>SKILLS</h1>
           <div className='three-col-container'>
             <div className='three-col'>
-              <h2>Programming Languages</h2>
-              <li>JavaScript</li>
-              <li>Java</li>
-              <li>Python</li>
+              <div className='skills-card'>
+                <p className='resume-place'>Programming Languages</p>
+                <li className='resume-title'>JavaScript</li>
+                <li className='resume-title'>Java</li>
+                <li className='resume-title'>Python</li>
+              </div>
             </div>
             <div className='three-col'>
-              <h2>Libraries & Frameworks</h2>
-              <li>React</li>
-              <li>Express</li>
-              <li>MongoDB</li>
-              <li>Node</li>
-              <li>jQuery</li>
-              <li>SASS & SCSS</li>
+              <div className='skills-card'>
+                <p className='resume-place'>Libraries & Frameworks</p>
+                <li className='resume-title'>React</li>
+                <li className='resume-title'>Express</li>
+                <li className='resume-title'>MongoDB</li>
+                <li className='resume-title'>Node</li>
+                <li className='resume-title'>jQuery</li>
+                <li className='resume-title'>SASS & SCSS</li>
+              </div>
             </div>
             <div className='three-col'>
-              <h2>Tools</h2>
-              <li>NPM (Node Package Manager)</li>
-              <li>Figma</li>
-              <li>Git/Github/Version Control</li>
-              <li>VScode</li>
-              <li>CMS - WordPress, Shopify, SquareSpace</li>
+              <div className='skills-card'>
+                <p className='resume-place'>Tools</p>
+                <li className='resume-title'>NPM (Node Package Manager)</li>
+                <li className='resume-title'>Figma</li>
+                <li className='resume-title'>Git/Github/Version Control</li>
+                <li className='resume-title'>VScode</li>
+                <li className='resume-title'>
+                  CMS - WordPress, Shopify, SquareSpace
+                </li>
+              </div>
             </div>
           </div>
 

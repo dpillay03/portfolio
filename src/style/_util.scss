@@ -2,7 +2,8 @@
 
 // Variables
 $header-font: 'Montserrat', sans-serif;
-$body-font-color: #888888;
+$body-font: 'Montserrat', sans-serif;
+$body-font-color: #a4a4a4;
 $white: #ffffff;
 $orange: #FF651C;
 
@@ -12,3 +13,17 @@ $screen-sm: 576px;
 $screen-md: 768px;
 $screen-lg: 992px;
 $screen-xl: 1200px;
+
+.subheader-text {
+    font-family: $body-font;
+    font-size: 15px;
+    font-weight: 400;
+    color: $orange;
+}
+.body-text {
+    font-family: $body-font;
+    font-size: 17px;
+    font-weight: 200;
+    line-height: 1.3em;
+    color: $body-font-color;
+}

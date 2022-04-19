@@ -1,27 +1,63 @@
 import React from "react";
 import ContactForm from "../modules/ContactForm";
+import { BsPersonFill, BsFillBriefcaseFill } from "react-icons/bs";
+import { GoLocation } from "react-icons/go";
+import { AiOutlineMail } from "react-icons/ai";
+
 export default class Contact extends React.Component {
   render() {
     return (
       <React.Fragment>
         <section className='content-wrapper'>
+          <h1>CONTACT</h1>
           <div className='two-col-container'>
             <div className='two-col'>
               <ContactForm />
             </div>
             <div className='two-col'>
-              <h2>
-                <span className='span-orange'>Name:</span>Daniel Pillay
+              <h2 className='contact-orange-bio' style={{ color: "#fff" }}>
+                <BsPersonFill
+                  size={50}
+                  style={{
+                    marginRight: "20px",
+                    verticalAlign: "middle",
+                    color: "#FF651C",
+                  }}
+                />
+                Daniel Pillay
               </h2>
-              <h2>
-                <span className='span-orange'>Location:</span>Honolulu, Hawaii
+              <h2 className='contact-orange-bio' style={{ color: "#fff" }}>
+                <GoLocation
+                  size={50}
+                  style={{
+                    marginRight: "20px",
+                    verticalAlign: "middle",
+                    color: "#FF651C",
+                  }}
+                />
+                Honolulu, Hawaii
               </h2>
-              <h2>
-                <span className='span-orange'>Hometown:</span>Seattle,
-                Washington
+              <h2 className='contact-orange-bio' style={{ color: "#fff" }}>
+                <BsFillBriefcaseFill
+                  size={50}
+                  style={{
+                    marginRight: "20px",
+                    verticalAlign: "middle",
+                    color: "#FF651C",
+                  }}
+                />
+                Software Engineer - UI/UX
               </h2>
-              <h2>
-                <span className='span-orange'>Email:</span>dpillay03@gmail.com
+              <h2 className='contact-orange-bio' style={{ color: "#fff" }}>
+                <AiOutlineMail
+                  size={50}
+                  style={{
+                    marginRight: "20px",
+                    verticalAlign: "middle",
+                    color: "#FF651C",
+                  }}
+                />
+                dpillay03@gmail.com
               </h2>
             </div>
           </div>

@@ -16,7 +16,7 @@ export default class Navigation extends React.Component {
   render() {
     return (
       <BrowserRouter>
-        <div className='wrapper'>
+        <div className='nav-wrapper'>
           <article>
             <Switch className='content'>
               <Route exact path='/' component={Home} />
@@ -30,8 +30,8 @@ export default class Navigation extends React.Component {
           <aside>
             <ul>
               <img
+                id='logo'
                 src={Logo}
-                style={{ width: "60px", margin: "0 auto", display: "block" }}
                 alt="Daniel Pillay's personal branding logo dp"
               />
               <NavLink

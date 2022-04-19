@@ -1,12 +1,13 @@
 import React from "react";
 import portrait from "../../assets/portrait.jpg";
-import head from "../../assets/headshot_transparant.png";
+import { NavLink, BrowserRouter, Route, Switch } from "react-router-dom";
 import {
   FaFacebookSquare,
   FaLinkedin,
   FaGithubSquare,
   FaInstagramSquare,
 } from "react-icons/fa";
+import TextLoop from "react-text-loop";
 
 export default class Home extends React.Component {
   render() {
@@ -21,23 +22,58 @@ export default class Home extends React.Component {
             />
           </div>
           <div className='two-col'>
-            <h1>Daniel Pillay</h1>
+            <h1>DANIEL PILLAY</h1>
             <hr></hr>
-            <h2>Software Engineer</h2>
-            <p>
+            <TextLoop interval={3000} className='text-loop'>
+              <span className='text-loop-item'>Software Engineer</span>
+              <span className='text-loop-item'>UI/UX Developer</span>
+              <span className='text-loop-item'>Air Force Veteran</span>
+            </TextLoop>
+
+            <p id='home-bio' className='body-text'>
               UI/UX Developer with a passion for all things tech and art,
-              preferably in conjunction
+              preferably in conjunction.
             </p>
 
             <div id='social-icons-container'>
-              <FaGithubSquare size={40} />
-              <FaLinkedin size={40} />
-              <FaInstagramSquare size={40} />
-              <FaFacebookSquare size={40} />
+              <a
+                href='https://github.com/dpillay03'
+                target='_blank'
+                rel='noreferrer'
+              >
+                <FaGithubSquare className='social-icon' size={45} />
+              </a>
+              <a
+                href='https://www.linkedin.com/in/danielpillay/'
+                target='_blank'
+                rel='noreferrer'
+              >
+                <FaLinkedin className='social-icon' size={45} />
+              </a>
+              <a
+                href='https://www.instagram.com/dpillay3'
+                target='_blank'
+                rel='noreferrer'
+              >
+                <FaInstagramSquare className='social-icon' size={45} />
+              </a>
+              <a
+                href='https://www.facebook.com/dan3pillay/'
+                target='_blank'
+                rel='noreferrer'
+              >
+                <FaFacebookSquare className='social-icon' size={45} />
+              </a>
             </div>
 
-            <button>About Me</button>
-            <button>Contact</button>
+            <div className='btn-container'>
+              <NavLink to='/about'>
+                <button>About Me</button>
+              </NavLink>
+              <NavLink to='/contact'>
+                <button>Contact</button>
+              </NavLink>
+            </div>
           </div>
         </div>
       </section>

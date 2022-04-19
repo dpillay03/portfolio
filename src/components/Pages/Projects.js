@@ -14,9 +14,9 @@ export default class Project extends React.Component {
               <FaGithubSquare
                 size={30}
                 className='githubProjIcon'
-                style={{ verticalAlign: "middle", marginRight: "7px" }}
+                color={"#a4a4a4;"}
+                style={{ display: "none" }}
               />
-              No Github
             </a>
           );
         }
@@ -25,6 +25,7 @@ export default class Project extends React.Component {
             <FaGithubSquare
               size={30}
               className='githubProjIcon'
+              color={"#a4a4a4;"}
               style={{ verticalAlign: "middle", marginRight: "7px" }}
             />
             Github
@@ -34,26 +35,29 @@ export default class Project extends React.Component {
       return (
         <section className='content-wrapper'>
           <div className='two-col-container' key={i}>
-            <div className='two-col'>
+            <div className='two-col projects-card'>
               <img
                 className='project-image'
                 src={proj.image}
                 alt={proj.alt}
               ></img>
             </div>
-            <div className='two-col'>
-              <h3>{proj.name}</h3>
+            <div className='two-col projects-card'>
+              <h3 className='project-title'>{proj.name}</h3>
               <p className='project-description'>{proj.description}</p>
               <p className='project-built'>Built with: {proj.built}</p>
-              <a className='project-link' href={proj.link}>
-                <AiOutlineFolderView
-                  size={30}
-                  className='githubProjIcon'
-                  style={{ verticalAlign: "middle", marginRight: "15px" }}
-                />
-                Website
-              </a>
-              <GitCheck />
+              <div className='project-link-container'>
+                <a className='project-link' href={proj.link}>
+                  <AiOutlineFolderView
+                    size={30}
+                    className='githubProjIcon'
+                    color={"#a4a4a4;"}
+                    style={{ verticalAlign: "middle", marginRight: "15px" }}
+                  />
+                  View Project
+                </a>
+                <GitCheck />
+              </div>
             </div>
           </div>
         </section>
