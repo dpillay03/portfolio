@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import App from "./components/pages/App";
+import App from "./components/Pages/App";
 import "../src/style/main.scss";
 import reportWebVitals from "./reportWebVitals";
 import ParticlesJS from "../src/components/modules/Particles";
