@@ -1,5 +1,3 @@
-import React from "react";
-import "../style/skills.scss";
 import Particles from "react-particles-js";
 
 const ParticlesJS = () => {
@@ -7,10 +5,9 @@ const ParticlesJS = () => {
     <Particles
       style={{
         position: "absolute",
-        backgroundColor: "#232640",
+        backgroundColor: "#111111",
+        zIndex: "-1",
       }}
-      height='375px'
-      width='100%'
       params={{
         particles: {
           number: {
@@ -39,7 +36,7 @@ const ParticlesJS = () => {
             },
           },
           opacity: {
-            value: 0.5,
+            value: 0.3,
             random: true,
             anim: {
               enable: true,
@@ -62,8 +59,8 @@ const ParticlesJS = () => {
             enable: false,
             distance: 150,
             color: "#ffffff",
-            opacity: 0.4,
-            width: 1,
+            opacity: 0.1,
+            width: 0.5,
           },
           move: {
             enable: true,

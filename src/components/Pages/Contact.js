@@ -1,64 +1,66 @@
 import React from "react";
-import ContactForm from "../ContactForm.js";
-import "../../style/contact.scss";
-import {
-  TiSocialLinkedinCircular,
-  TiSocialInstagramCircular,
-  TiSocialGithubCircular,
-  TiSocialYoutubeCircular,
-} from "react-icons/ti";
+import ContactForm from "../modules/ContactForm";
+import { BsPersonFill, BsFillBriefcaseFill } from "react-icons/bs";
+import { GoLocation } from "react-icons/go";
+import { AiOutlineMail } from "react-icons/ai";
 
 export default class Contact extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <section id='page' className='contact-page'>
-          <h1 className='section-titles' id='contact-title'>
-            LET'S GET IN TOUCH!
-          </h1>
-          <div className='social-container'>
-            <a
-              href='https://linkedin.com/in/danielpillay'
-              target='_blank'
-              rel='noreferrer'
-            >
-              <TiSocialLinkedinCircular
-                size={50}
-                className='contact-social-icon'
-              />
-            </a>
-            <a
-              href='https://github.com/dpillay03'
-              target='_blank'
-              rel='noreferrer'
-            >
-              <TiSocialGithubCircular
-                size={50}
-                className='contact-social-icon'
-              />{" "}
-            </a>
-            <a
-              href='https://instagram.com/dpillay3'
-              target='_blank'
-              rel='noreferrer'
-            >
-              <TiSocialInstagramCircular
-                size={50}
-                className='contact-social-icon'
-              />
-            </a>
-            <a
-              href='https://www.youtube.com/channel/UCCFoaR1kuuDhhHgSwD9j9Mw'
-              target='_blank'
-              rel='noreferrer'
-            >
-              <TiSocialYoutubeCircular
-                size={50}
-                className='contact-social-icon'
-              />
-            </a>
+        <section className='content-wrapper'>
+          <h1 className='header-centered'>CONTACT</h1>
+          <div className='two-col-container'>
+            <div className='two-col'>
+              <ContactForm />
+            </div>
+            <div className='two-col'>
+              <h2 className='contact-orange-bio' style={{ color: "#fff" }}>
+                <BsPersonFill
+                  size={50}
+                  style={{
+                    marginRight: "20px",
+                    verticalAlign: "middle",
+                    color: "#FF651C",
+                  }}
+                />
+                Daniel Pillay
+              </h2>
+              <h2 className='contact-orange-bio' style={{ color: "#fff" }}>
+                <GoLocation
+                  size={50}
+                  style={{
+                    marginRight: "20px",
+                    verticalAlign: "middle",
+                    color: "#FF651C",
+                  }}
+                />
+                Honolulu, Hawaii
+              </h2>
+              <h2 className='contact-orange-bio' style={{ color: "#fff" }}>
+                <BsFillBriefcaseFill
+                  size={50}
+                  style={{
+                    marginRight: "20px",
+                    verticalAlign: "middle",
+                    color: "#FF651C",
+                  }}
+                />
+                Software Engineer - UI/UX
+              </h2>
+              <h2 className='contact-orange-bio' style={{ color: "#fff" }}>
+                <AiOutlineMail
+                  size={50}
+                  style={{
+                    marginRight: "20px",
+                    verticalAlign: "middle",
+                    color: "#FF651C",
+                  }}
+                />
+                dpillay03@gmail.com
+              </h2>
+            </div>
           </div>
-          <ContactForm />
         </section>
       </React.Fragment>
     );

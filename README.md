@@ -1,14 +1,10 @@
-## Porftolio for Daniel Pillay
+# Daniel Pillay - Software Engineering Porftolio
 
-#### Developer: Daniel Pillay
+![alt text](/src/assets/under_construction.png/ "Page Screenshot")
+**Developer:** Daniel Pillay
 
----
+**Purpose:** Daniel Pillay's portfolio website which showcases his work, exerpience, and serves as a point of contact.
 
-### Technologies:
+**Built With:** HTML5, SCSS, React, SanityIO
 
-- React
-- Sanity.io
-
-### Deployed Websites:
-
-danielpillay.com
+**Deployed Link:** [danielpillay.com](https://danielpillay.com)

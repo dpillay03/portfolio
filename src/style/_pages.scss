@@ -1,0 +1,113 @@
+@import "util";
+
+body {
+  background-color: #111111;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.content-wrapper {
+  max-height: 500px;
+  margin: 0px;
+  
+}
+#home-wrapper {
+  margin-top: 40px;
+}
+#logo {
+  width: 60px;
+  margin: 0 auto;
+  display: block;
+}
+article {
+    grid-area: content;
+    background-color: #212121;
+    border-radius: 10px;
+    // overflow: scroll;
+    // overflow-x: hidden;
+    height: 500px;
+  }
+  aside {
+    grid-area: sidebar;
+    border: 1px solid #111;
+    background-color: #212121;   
+    border-radius: 0px 30px 30px 0; 
+    height: 500px;
+  }
+  .nav-wrapper {
+    display: grid;
+    grid-gap: 100px;
+    grid-template-columns: 100px 80%;
+    grid-template-areas: 
+      "sidebar content";
+    width: 100%;
+    position: absolute;
+  
+    margin: 0 auto;
+    top: 10%;
+  }
+  ul {
+    padding: 0px;
+  }
+  a.nav-icon {
+    text-decoration: none;
+  }
+  .nav-icon {
+    width: 100%;
+    text-align: left;
+    padding-top:50px;
+    transition: .4s ease-in-out;
+  }
+  .nav-icon:hover {
+    color: $white;
+  }
+
+
+  @media (max-width: $screen-sm) {
+    #logo {
+      visibility: hidden;
+      display: none;
+    }
+    .content-wrapper {
+      max-height: 90vh;
+      overflow-x:hidden;
+    }
+    #home-wrapper {
+      height: 100vh
+    }
+    .nav-wrapper {
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "content"
+        "sidebar";
+      position: relative;
+      height: 100vh;
+      article {
+        height: 100%;
+
+      }
+      aside {
+      position: fixed;
+      border-radius: 20px 20px 0px 0px;
+      text-align: center;
+      bottom: 0;
+      width: 100vw;
+      height: 90px;
+      padding: 0px;
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px; 
+      border-style: outset;
+  background-color: #111111;
+      
+        .nav-icon {
+          width: 40px;
+          padding: 0px 25px  0px 25px ;
+          justify-content: center;
+          size: 50;
+        }
+      }
+    }
+    
+  }
+  

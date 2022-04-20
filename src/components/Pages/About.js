@@ -1,163 +1,139 @@
 import React from "react";
-import "../../style/about.scss";
-import "../../style/_darkmode.scss";
-import Headshot from "../..//assets/headshot.PNG";
-import {
-  TiSocialLinkedinCircular,
-  TiSocialInstagramCircular,
-  TiSocialGithubCircular,
-  TiSocialYoutubeCircular,
-} from "react-icons/ti";
-import LazyLoad from "react-lazyload";
-import AirForce from "../../assets/military_pic.jpg";
-import BJJ from "../../assets/daniel_leoVieira.JPG";
-import Skydive from "../../assets/skydive.JPG";
-import Surf from "../../assets/surf.JPG";
-import ScrollToTop from "react-router-scroll-top";
-
+import Headshot from "../../assets/headshot_trans.png";
+import dp_bjj from "../../assets/daniel_leoVieira.JPG";
+import dp_military from "../../assets/military_pic.jpg";
+import dp_skydive from "../../assets/skydive.JPG";
+import dp_surf from "../../assets/surf.JPG";
 export default class About extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <ScrollToTop />
-        <section id='page' className='about-page'>
-          {/* ABOUT HEADER */}
-          <section id='about-section'>
-            <h1 className='section-titles'>
-              <span id='my-mission'>MY STORY, MY MISSION</span>
-            </h1>
-            <LazyLoad height={400}>
+        <section className='content-wrapper'>
+          <div className='two-col-container'>
+            <div className='two-col'>
               <img
                 src={Headshot}
-                id='headshot'
-                className='about-left about-img'
-                alt="Daniel Pillay's headshot/professional"
-              ></img>
-            </LazyLoad>
-            <p className='about-text'>
-              Hi! My name Daniel Pillay. I am a Software Developer who
-              specializes in frontend and full-stack development. After
-              honorably seperating from the United States Air Force in 2017 I
-              decided to chase my passion and transitioned into the tech
-              industry. I have a bachelors degree in Computer Science from
-              Colorado State University, Global Campus. I also earned a
-              certificate of Advanced Software Development in Full Stack
-              JavaScript from Code Fellows Coding Bootcamp located in Seattle,
-              Washington.
-            </p>
-            {/* <br /> */}
-            <p className='about-text'>
-              I have industry and freelance experience building websites and
-              managing digital marketing campaigns for a diverse range of
-              clients and companies. In 2017 I launched my web design company{" "}
-              <a
-                id='fsm-link'
-                href='https://flowstatemedia.io'
-                target='_blank'
-                rel='noreferrer'
-              >
-                Flow State Media LLC{" "}
-              </a>
-              with the goal of helping others grow their online footprints with
-              powerful web and marketing solutions.
-            </p>
-            {/* <br /> */}
-            <p className='about-text'>
-              In my free time, I love training Brazilian Jiu-jitsu, skydiving,
-              playing the guitar, surfing, hiking, reading, listening to
-              podcasts, snorkeling, family time, and much more.
-            </p>
-            {/* <br /> */}
-            <p className='about-text'>
-              If you have any questions, want to work with me, or just want to
-              say hi - feel free to reach out to me!
-            </p>
+                id='about-headshot'
+                alt="daniel pillay's software engineering headshot"
+              />
+            </div>
+            <div className='two-col'>
+              <p className='subheader-text'>My Story. My Mission.</p>
+              <h1 className='header-left'>ABOUT ME</h1>
+              <p className='body-text'>
+                Hi, my name is Daniel. I am an Air Force veteran turned Software
+                Engineer with an affinity for powerful interfaces and seamless
+                experiences. I have a background in web design, web development,
+                and digital marketing. My mission is to combine these skills to
+                help others establish their online presence.
+                <br />
+                <br />
+                In my free time, I love training Muay Thai, Brazilian Jiu-jitsu,
+                playing the guitar, surfing, hiking, working out, traveling,
+                reading, listening to podcasts, being near the ocean (or any
+                body of water), family time, and more.
+              </p>
+            </div>
+          </div>
 
-            <div className='social-container'>
-              <a
-                href='https://linkedin.com/in/danielpillay'
-                target='_blank'
-                rel='noreferrer'
-              >
-                <TiSocialLinkedinCircular
-                  size={50}
-                  className='contact-social-icon'
-                />
-              </a>
-              <a
-                href='https://github.com/dpillay03'
-                target='_blank'
-                rel='noreferrer'
-              >
-                <TiSocialGithubCircular
-                  size={50}
-                  className='contact-social-icon'
-                />{" "}
-              </a>
-              <a
-                href='https://instagram.com/dpillay3'
-                target='_blank'
-                rel='noreferrer'
-              >
-                <TiSocialInstagramCircular
-                  size={50}
-                  className='contact-social-icon'
-                />
-              </a>
-              <a
-                href='https://www.youtube.com/channel/UCCFoaR1kuuDhhHgSwD9j9Mw'
-                target='_blank'
-                rel='noreferrer'
-              >
-                <TiSocialYoutubeCircular
-                  size={50}
-                  className='contact-social-icon'
-                />
-              </a>
-            </div>
-            <div id='about-image-section'>
-              <div className='imageColumn'>
-                <LazyLoad height={250}>
-                  <img
-                    className='about-image-bottom'
-                    src={AirForce}
-                    alt='Daniel Pillay in Air Force Uniform'
-                    style={{ width: "100%" }}
-                  />
-                </LazyLoad>
+          {/* EXPERIENCE */}
+          <h1 className='header-centered'>EXPERIENCE</h1>
+          <div className='two-col-container'>
+            <div className='two-col'>
+              <h2 className='resume-header'>PROFESSIONAL</h2>
+              <div className='resume-card'>
+                <p className='resume-place'>Trinity Insight</p>
+                <p className='resume-title'>
+                  UI/UX Engineer - Frontend Developer
+                </p>
+                <p className='resume-date'>April, 2022 - Current</p>
               </div>
-              <div className='imageColumn'>
-                <LazyLoad height={250}>
-                  <img
-                    className='about-image-bottom'
-                    src={BJJ}
-                    alt='Daniel Pillay in with Checkmat Founder Leo Vieira'
-                    style={{ width: "100%" }}
-                  />
-                </LazyLoad>
+              <div className='resume-card'>
+                <p className='resume-place'>
+                  Amazing Life Chiropractic and Wellness
+                </p>
+                <p className='resume-title'>
+                  Web Manager & Marketing Strategist
+                </p>
+                <p className='resume-date'>January, 2019 - March 2022</p>
               </div>
-              <div className='imageColumn'>
-                <LazyLoad height={250}>
-                  <img
-                    className='about-image-bottom'
-                    src={Skydive}
-                    alt='Daniel Pillay Skydiving'
-                    style={{ width: "100%" }}
-                  />
-                </LazyLoad>
+              <div className='resume-card'>
+                <p className='resume-place'>Flowstate Media</p>
+                <p className='resume-title'>Freelance Web Designer, Owner</p>
+                <p className='resume-date'>May, 2017 - December 2018</p>
               </div>
-              <div className='imageColumn'>
-                <LazyLoad height={250}>
-                  <img
-                    className='about-image-bottom'
-                    src={Surf}
-                    alt='Daniel Pillay Surfing'
-                    style={{ width: "100%" }}
-                  />
-                </LazyLoad>
+              <div className='resume-card'>
+                <p className='resume-place'>United States Air Force</p>
+                <p className='resume-title'>Security Forces Member</p>
+                <p className='resume-date'>April, 2013 - April 2017</p>
               </div>
             </div>
-          </section>
+            <div className='two-col'>
+              <h2 className='resume-header'>EDUCATION</h2>
+              <div>
+                <div className='resume-card'>
+                  <p className='resume-place'>
+                    Colorado State University, Global
+                  </p>
+                  <p className='resume-title'>
+                    Bachelor of Science, Computer Science
+                  </p>
+                  <p className='resume-date'>January, 2020 - January 2022</p>
+                </div>
+                <div className='resume-card'>
+                  <p className='resume-place'>Codefellows - Coding Bootcamp</p>
+                  <p className='resume-title'>
+                    Certificate: Advanced Software Development in Full Stack
+                    JavaScript
+                  </p>
+                  <p className='resume-date'>September, 2017 - June 2018</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* SKILLS */}
+          <h1 className='header-centered'>SKILLS</h1>
+          <div className='three-col-container'>
+            <div className='three-col'>
+              <div className='skills-card'>
+                <p className='resume-place'>Programming Languages</p>
+                <li className='resume-title'>JavaScript</li>
+                <li className='resume-title'>Java</li>
+                <li className='resume-title'>Python</li>
+              </div>
+            </div>
+            <div className='three-col'>
+              <div className='skills-card'>
+                <p className='resume-place'>Libraries & Frameworks</p>
+                <li className='resume-title'>React</li>
+                <li className='resume-title'>Express</li>
+                <li className='resume-title'>MongoDB</li>
+                <li className='resume-title'>Node</li>
+                <li className='resume-title'>jQuery</li>
+                <li className='resume-title'>SASS & SCSS</li>
+              </div>
+            </div>
+            <div className='three-col'>
+              <div className='skills-card'>
+                <p className='resume-place'>Tools</p>
+                <li className='resume-title'>NPM (Node Package Manager)</li>
+                <li className='resume-title'>Figma</li>
+                <li className='resume-title'>Git/Github/Version Control</li>
+                <li className='resume-title'>VScode</li>
+                <li className='resume-title'>
+                  CMS - WordPress, Shopify, SquareSpace
+                </li>
+              </div>
+            </div>
+          </div>
+
+          {/* Images */}
+          <div className='four-col-container'>
+            <img className='four-col about-img' src={dp_military} alt='' />
+            <img className='four-col about-img' src={dp_bjj} alt='' />
+            <img className='four-col about-img' src={dp_skydive} alt='' />
+            <img className='four-col about-img' src={dp_surf} alt='' />
+          </div>
         </section>
       </React.Fragment>
     );
