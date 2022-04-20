@@ -63,6 +63,11 @@ export default class Project extends React.Component {
         </section>
       );
     });
-    return <ul>{listProjects}</ul>;
+    return (
+      <React.Fragment>
+        <h1 className='header-centered'>PORFTOLIO</h1>
+        <ul>{listProjects}</ul>
+      </React.Fragment>
+    );
   }
 }

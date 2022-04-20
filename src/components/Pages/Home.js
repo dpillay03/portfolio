@@ -22,17 +22,20 @@ export default class Home extends React.Component {
             />
           </div>
           <div className='two-col'>
-            <h1>DANIEL PILLAY</h1>
+            <h1 className='header-left'>DANIEL PILLAY</h1>
             <hr></hr>
             <TextLoop interval={3000} className='text-loop'>
-              <span className='text-loop-item'>Software Engineer</span>
               <span className='text-loop-item'>UI/UX Developer</span>
+              <span className='text-loop-item'>Software Engineer</span>
               <span className='text-loop-item'>Air Force Veteran</span>
             </TextLoop>
 
             <p id='home-bio' className='body-text'>
-              UI/UX Developer with a passion for all things tech and art,
-              preferably in conjunction.
+              Software Engineer with a passion for all things tech and art,
+              preferably in conjunction. Currently a UX/UX Engineer at{" "}
+              <a href='https://trinity.one'>
+                <span id='trinity-orange'>@Trinity</span>
+              </a>
             </p>
 
             <div id='social-icons-container'>

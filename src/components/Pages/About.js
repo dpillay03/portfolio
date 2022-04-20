@@ -19,7 +19,7 @@ export default class About extends React.Component {
             </div>
             <div className='two-col'>
               <p className='subheader-text'>My Story. My Mission.</p>
-              <h1>ABOUT ME</h1>
+              <h1 className='header-left'>ABOUT ME</h1>
               <p className='body-text'>
                 Hi, my name is Daniel. I am an Air Force veteran turned Software
                 Engineer with an affinity for powerful interfaces and seamless
@@ -37,7 +37,7 @@ export default class About extends React.Component {
           </div>
 
           {/* EXPERIENCE */}
-          <h1>EXPERIENCE</h1>
+          <h1 className='header-centered'>EXPERIENCE</h1>
           <div className='two-col-container'>
             <div className='two-col'>
               <h2 className='resume-header'>PROFESSIONAL</h2>
@@ -86,20 +86,13 @@ export default class About extends React.Component {
                     Certificate: Advanced Software Development in Full Stack
                     JavaScript
                   </p>
-                  <p className='resume-date'>January, 2020 - January 2022</p>
-                </div>
-                <div className='resume-card'>
-                  <p className='resume-place'>Shoreline Community College</p>
-                  <p className='resume-title'>
-                    Associate of Arts, Direct Transfer
-                  </p>
-                  <p className='resume-date'>January, 2018 - December 2019</p>
+                  <p className='resume-date'>September, 2017 - June 2018</p>
                 </div>
               </div>
             </div>
           </div>
           {/* SKILLS */}
-          <h1>SKILLS</h1>
+          <h1 className='header-centered'>SKILLS</h1>
           <div className='three-col-container'>
             <div className='three-col'>
               <div className='skills-card'>

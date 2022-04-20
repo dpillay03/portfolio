@@ -9,7 +9,7 @@ export default class Contact extends React.Component {
     return (
       <React.Fragment>
         <section className='content-wrapper'>
-          <h1>CONTACT</h1>
+          <h1 className='header-centered'>CONTACT</h1>
           <div className='two-col-container'>
             <div className='two-col'>
               <ContactForm />

@@ -9,13 +9,11 @@ body {
   box-sizing: border-box;
 }
 .content-wrapper {
-  overflow: scroll;
-  overflow-x: hidden;
   max-height: 500px;
   margin: 0px;
+  
 }
 #home-wrapper {
-  overflow: hidden;
   margin-top: 40px;
 }
 #logo {
@@ -27,7 +25,8 @@ article {
     grid-area: content;
     background-color: #212121;
     border-radius: 10px;
-    overflow: scroll;
+    // overflow: scroll;
+    // overflow-x: hidden;
     height: 500px;
   }
   aside {
@@ -76,8 +75,7 @@ article {
       overflow-x:hidden;
     }
     #home-wrapper {
-      overflow: scroll;
-      overflow-x:hidden;
+      height: 100vh
     }
     .nav-wrapper {
       grid-template-columns: 1fr;
@@ -87,7 +85,8 @@ article {
       position: relative;
       height: 100vh;
       article {
-        height: 100vh;
+        height: 100%;
+
       }
       aside {
       position: fixed;

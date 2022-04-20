@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     overflow: hidden;
-    justify-content: scroll;
+
     .two-col {
         padding: 16px;
     }
@@ -30,8 +30,6 @@
     .two-col-container {
         display: grid;
         grid-template-columns: 1fr;
-        overflow: scroll;
-        overflow-x: hidden;
         .two-col {
             padding: 0px;
             height: auto;

@@ -12,7 +12,7 @@ import { FaLaptopCode } from "react-icons/fa";
 import { GoMail } from "react-icons/go";
 import Logo from "../../assets/logo.png";
 
-export default class Navigation extends React.Component {
+export default class App extends React.Component {
   render() {
     return (
       <BrowserRouter>
@@ -36,9 +36,10 @@ export default class Navigation extends React.Component {
               />
               <NavLink
                 className='nav-item'
+                exact
                 to='/'
                 style={(isActive) => ({
-                  color: isActive ? "#fff" : "#FF651C",
+                  color: isActive ? "#fff " : "#FF651C",
                 })}
               >
                 <AiOutlineHome className='nav-icon' size={40} />
@@ -46,7 +47,7 @@ export default class Navigation extends React.Component {
 
               <NavLink
                 className='nav-item'
-                to='/about'
+                to='about'
                 style={(isActive) => ({
                   color: isActive ? "#fff" : "#FF651C",
                 })}
@@ -56,7 +57,7 @@ export default class Navigation extends React.Component {
 
               <NavLink
                 className='nav-item'
-                to='/projects'
+                to='projects'
                 style={(isActive) => ({
                   color: isActive ? "#fff" : "#FF651C",
                 })}
@@ -66,7 +67,7 @@ export default class Navigation extends React.Component {
 
               <NavLink
                 className='nav-item'
-                to='/contact'
+                to='contact'
                 style={(isActive) => ({
                   color: isActive ? "#fff" : "#FF651C",
                 })}
