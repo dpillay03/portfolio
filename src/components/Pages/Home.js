@@ -1,6 +1,6 @@
 import React from "react";
 import portrait from "../../assets/portrait.jpg";
-import { NavLink, BrowserRouter, Route, Switch } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import {
   FaFacebookSquare,
   FaLinkedin,
