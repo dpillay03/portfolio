@@ -11,7 +11,8 @@ body {
 .content-wrapper {
   max-height: 500px;
   margin: 0px;
-  
+  overflow: scroll;
+  overflow-x: hidden;
 }
 #home-wrapper {
   margin-top: 40px;
@@ -25,9 +26,8 @@ article {
     grid-area: content;
     background-color: #212121;
     border-radius: 10px;
-    // overflow: scroll;
-    // overflow-x: hidden;
     height: 500px;
+    overflow: hidden;
   }
   aside {
     grid-area: sidebar;

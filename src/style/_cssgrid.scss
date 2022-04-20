@@ -1,8 +1,6 @@
 .two-col-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    overflow: hidden;
-
     .two-col {
         padding: 16px;
     }

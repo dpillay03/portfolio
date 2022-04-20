@@ -65,8 +65,10 @@ export default class Project extends React.Component {
     });
     return (
       <React.Fragment>
-        <h1 className='header-centered'>PORFTOLIO</h1>
-        <ul>{listProjects}</ul>
+        <section className='content-wrapper'>
+          <h1 className='header-centered'>PORFTOLIO</h1>
+          <ul>{listProjects}</ul>
+        </section>
       </React.Fragment>
     );
   }
