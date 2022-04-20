@@ -7,7 +7,7 @@ import SinglePost from "../modules/SinglePost";
 import Post from "./Post";
 import Contact from "./Contact";
 import { AiOutlineHome } from "react-icons/ai";
-import { BsFillPersonFill } from "react-icons/bs";
+import { BsPerson } from "react-icons/bs";
 import { FaLaptopCode } from "react-icons/fa";
 import { GoMail } from "react-icons/go";
 import Logo from "../../assets/logo.png";
@@ -52,7 +52,7 @@ export default class App extends React.Component {
                   color: isActive ? "#fff" : "#FF651C",
                 })}
               >
-                <BsFillPersonFill className='nav-icon' size={40} />
+                <BsPerson className='nav-icon' size={40} />
               </NavLink>
 
               <NavLink

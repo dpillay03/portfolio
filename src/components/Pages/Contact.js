@@ -1,6 +1,6 @@
 import React from "react";
 import ContactForm from "../modules/ContactForm";
-import { BsPersonFill, BsFillBriefcaseFill } from "react-icons/bs";
+import { BsPerson, BsBriefcase } from "react-icons/bs";
 import { GoLocation } from "react-icons/go";
 import { AiOutlineMail } from "react-icons/ai";
 
@@ -9,14 +9,13 @@ export default class Contact extends React.Component {
     return (
       <React.Fragment>
         <section className='content-wrapper'>
-          <h1 className='header-centered'>CONTACT</h1>
           <div className='two-col-container'>
             <div className='two-col'>
               <ContactForm />
             </div>
             <div className='two-col'>
               <h2 className='contact-orange-bio' style={{ color: "#fff" }}>
-                <BsPersonFill
+                <BsPerson
                   size={50}
                   style={{
                     marginRight: "20px",
@@ -38,7 +37,7 @@ export default class Contact extends React.Component {
                 Honolulu, Hawaii
               </h2>
               <h2 className='contact-orange-bio' style={{ color: "#fff" }}>
-                <BsFillBriefcaseFill
+                <BsBriefcase
                   size={50}
                   style={{
                     marginRight: "20px",
